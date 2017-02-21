@@ -119,3 +119,39 @@ body.neatline.show #colophon, body.neatline.fullscreen #colophon {
   border-top: 1px solid #d2ba93;
   font-size: 12px;
 }
+/* line 123, ../sass/style.scss */
+body.neatline.show #static-bubble, body.neatline.fullscreen #static-bubble {
+  display: block;
+  background: #615e4b;
+  color: #f1e8dc;
+  border-radius: 14px;
+}
+/* line 130, ../sass/style.scss */
+body.neatline.show #static-bubble .close, body.neatline.fullscreen #static-bubble .close {
+  background: #f1e8dc;
+  color: #615e4b;
+  font-weight: bold;
+  padding: 0 7px;
+  border-radius: 5px;
+  font-size: 22px;
+}
+/* line 138, ../sass/style.scss */
+body.neatline.show #static-bubble .title, body.neatline.fullscreen #static-bubble .title {
+  display: inline;
+  font-size: 2em;
+  line-height: 1em;
+}
+/* line 143, ../sass/style.scss */
+body.neatline.show #static-bubble .subItemTitle, body.neatline.fullscreen #static-bubble .subItemTitle {
+  display: block;
+  font-size: 16px;
+  line-height: 30px;
+  background: #524f3c;
+  padding: 0 7px;
+  margin-top: 1.2em;
+}
+/* line 151, ../sass/style.scss */
+body.neatline.show #static-bubble .subItem, body.neatline.fullscreen #static-bubble .subItem {
+  display: block;
+  margin-bottom: .5em;
+}

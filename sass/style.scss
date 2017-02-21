@@ -119,6 +119,42 @@ body.neatline.show, body.neatline.fullscreen{
       border-top: 1px solid darken($narTan, 20%);
       font-size: $narFontSize - 2px;
   }  
+  
+  #static-bubble{
+    display:block;
+    background: $bubbleBrown;
+    color: $bubbleTan;
+    border-radius:14px;
+    $fontSize: 14px;
+    
+    .close{
+      background: $bubbleTan;
+      color: $bubbleBrown;
+      font-weight: bold;
+      padding: 0 7px;
+      border-radius: 5px;
+      font-size: 22px;
+    }
+    .title{
+      display:inline;
+      font-size: 2em;
+      line-height: 1em;
+    }
+    .subItemTitle{
+      display:block;
+      font-size: $fontSize + 2px;
+      line-height: 30px;
+      background: #524f3c;
+      padding: 0 7px;
+      margin-top: 1.2em;
+    }
+    .subItem{
+      display:block;
+      margin-bottom: .5em;
+    }
+    
+    
+  }
 }
 
 
