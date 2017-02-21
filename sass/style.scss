@@ -12,7 +12,8 @@
 body{
   font-weight: 300;
   margin: 0;
-  .neatline.browse {
+}
+  body.neatline.browse {
       font-size: 12px;
       background: #fcfcfc;
     div.container {
@@ -20,14 +21,13 @@ body{
         margin: 3em auto;
         width: 50%;
       div.exhibit {
-          margin: 5px 0
+          margin: 5px 0;
       }
     p.title {
-        font-weight: bold
-    }      
+        font-weight: bold;  }      
     }
   }  
-}
+
 
 a {
     text-decoration: none;

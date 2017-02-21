@@ -17,23 +17,24 @@ body {
   font-weight: 300;
   margin: 0;
 }
-/* line 15, ../sass/style.scss */
-body .neatline.browse {
+
+/* line 16, ../sass/style.scss */
+body.neatline.browse {
   font-size: 12px;
   background: #fcfcfc;
 }
-/* line 18, ../sass/style.scss */
-body .neatline.browse div.container {
+/* line 19, ../sass/style.scss */
+body.neatline.browse div.container {
   font-size: 1.2em;
   margin: 3em auto;
   width: 50%;
 }
-/* line 22, ../sass/style.scss */
-body .neatline.browse div.container div.exhibit {
+/* line 23, ../sass/style.scss */
+body.neatline.browse div.container div.exhibit {
   margin: 5px 0;
 }
-/* line 25, ../sass/style.scss */
-body .neatline.browse div.container p.title {
+/* line 26, ../sass/style.scss */
+body.neatline.browse div.container p.title {
   font-weight: bold;
 }
 
