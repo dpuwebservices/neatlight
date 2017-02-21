@@ -36,43 +36,42 @@ body{
     }
   }  
 
-
  
 body.neatline.show {
     background: #fefefe;
     font-size: 16px;
+  div.exhibit {
+      float: left;
+      width: 1px;
+    #neatline, #neatline-map {
+        height: 100%;
+        width: 100%;
+    }
+  }
+  div.narrative {
+      float: right;
+      overflow-y: scroll;
+      padding: 2em;
+      width: 500px;
+    a.back {
+        display: inline-block;
+        padding: 5px 8px;
+        margin-bottom: 1em;
+        font-size: .8em;
+      .arrow {
+          font-size: 13px;
+      }
+    }
+    h1.title {
+        margin: 0;
+        padding-bottom: .2em;
+        font-weight: 200;
+        border-bottom: 1px solid #e6e6e6;
+        font-size: 40px
+    }    
+  }  
 }
-body.neatline.show div.exhibit {
-    float: left;
-    width: 1px;
-}
-body.neatline.show div.exhibit #neatline,
-body.neatline.show div.exhibit #neatline-map {
-    height: 100%;
-    width: 100%
-}
-body.neatline.show div.narrative {
-    float: right;
-    overflow-y: scroll;
-    padding: 2em;
-    width: 500px;
-}
-body.neatline.show div.narrative a.back {
-    display: inline-block;
-    padding: 5px 8px;
-    margin-bottom: 1em;
-    font-size: .8em;
-}
-body.neatline.show div.narrative a.back .arrow {
-    font-size: 13px
-}
-body.neatline.show div.narrative h1.title {
-    margin: 0;
-    padding-bottom: .2em;
-    font-weight: 200;
-    border-bottom: 1px solid #e6e6e6;
-    font-size: 40px
-}
+
 body.neatline.show div.narrative p {
     line-height: 1.7em
 }
