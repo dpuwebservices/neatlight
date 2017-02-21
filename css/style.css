@@ -86,24 +86,34 @@ body.neatline.show div.narrative [data-neatline-slug].selected, body.neatline.sh
 /* line 98, ../sass/style.scss */
 body.neatline.show #waypoints {
   color: #615e4b;
-  background: rgba(255, 255, 255, 0.7);
-  border-right: 2px solid #d2ba93;
+  font-size: 18px;
+  background: rgba(246, 241, 233, 0.7);
+  border-right: 2px solid #e1d1b7;
 }
-/* line 102, ../sass/style.scss */
+/* line 103, ../sass/style.scss */
+body.neatline.show #waypoints a.title {
+  border-bottom: 2px solid #e1d1b7;
+}
+/* line 104, ../sass/style.scss */
 body.neatline.show #waypoints a.title:hover, body.neatline.show #waypoints a.title.selected {
   background: #738fb5;
   color: #ffffff;
 }
-/* line 106, ../sass/style.scss */
+/* line 105, ../sass/style.scss */
+body.neatline.show #waypoints a.title.highlighted {
+  background: #b6c4d8;
+  color: #615e4b;
+}
+/* line 109, ../sass/style.scss */
 body.neatline.show #static-bubble div.body a.close {
   font-size: 2em;
   line-height: .8em;
 }
-/* line 110, ../sass/style.scss */
+/* line 113, ../sass/style.scss */
 body.neatline.show #static-bubble div.body a.close:hover {
   background: none;
 }
-/* line 114, ../sass/style.scss */
+/* line 117, ../sass/style.scss */
 body.neatline.show #colophon {
   border-top: 1px solid #d2ba93;
   font-size: 12px;

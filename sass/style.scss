@@ -5,7 +5,7 @@ $titleFontSize: 32px;
 $titleFontLineHeight: 38px;
 
 $narTan: rgb(240,232,219);
-$narTanHighlight: #d9bf9d;
+$narTanHighlight: rgb(217,191,157);
 $narBrown: #615e4b;
 $narBlue: #738fb5;
 $narWhite: #ffffff;
@@ -97,9 +97,12 @@ body.neatline.show {
   // Waypoints Section
   #waypoints{
     color: $narBrown;
-    background: rgba(lighten($narTan, 20%), .7);
-    border-right: 2px solid darken($narTan, 20%);
+    font-size: $narFontSize + 4px;
+    background: rgba(lighten($narTan,4%), .7);
+    border-right: 2px solid darken($narTan, 10%);
+    a.title{border-bottom:2px solid darken($narTan, 10%)};
     a.title:hover, a.title.selected{background:$narBlue; color:$narWhite;}
+    a.title.highlighted{background:lighten($narBlue, 20%); color: $narBrown;}
   }
   
   #static-bubble div.body {
