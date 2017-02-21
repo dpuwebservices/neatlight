@@ -1,77 +1,85 @@
 @import url("https://fonts.googleapis.com/css?family=Fjalla+One|Yanone+Kaffeesatz");
-/* line 2, ../sass/style.scss */
+/* line 9, ../sass/style.scss */
 * {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
 
-/* line 10, ../sass/style.scss */
+/* line 18, ../sass/style.scss */
 body {
   margin: 0;
 }
-/* line 12, ../sass/style.scss */
+/* line 20, ../sass/style.scss */
 body a {
   text-decoration: none;
 }
-/* line 15, ../sass/style.scss */
+/* line 23, ../sass/style.scss */
 body a:hover {
   text-decoration: underline;
 }
 
-/* line 22, ../sass/style.scss */
+/* line 30, ../sass/style.scss */
 body.neatline.browse div.container {
   margin: 3em auto;
   width: 50%;
 }
-/* line 25, ../sass/style.scss */
+/* line 33, ../sass/style.scss */
 body.neatline.browse div.container div.exhibit {
   margin: 5px 0;
 }
 
-/* line 35, ../sass/style.scss */
+/* line 42, ../sass/style.scss */
+body.neatline.show {
+  font-family: "Fjalla One", sans-serif;
+}
+/* line 45, ../sass/style.scss */
+body.neatline.show h1, body.neatline.show h2, body.neatline.show h3, body.neatline.show h4, body.neatline.show h5, body.neatline.show h6 {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+}
+/* line 48, ../sass/style.scss */
 body.neatline.show div.exhibit {
   float: left;
   width: 1px;
 }
-/* line 38, ../sass/style.scss */
+/* line 51, ../sass/style.scss */
 body.neatline.show div.exhibit #neatline, body.neatline.show div.exhibit #neatline-map {
   height: 100%;
   width: 100%;
 }
-/* line 43, ../sass/style.scss */
+/* line 56, ../sass/style.scss */
 body.neatline.show div.narrative {
   float: right;
   overflow-y: scroll;
   padding: 2em;
   width: 500px;
 }
-/* line 48, ../sass/style.scss */
+/* line 61, ../sass/style.scss */
 body.neatline.show div.narrative a.back {
   display: inline-block;
   padding: 5px 8px;
   margin-bottom: 1em;
   font-size: .8em;
 }
-/* line 53, ../sass/style.scss */
+/* line 66, ../sass/style.scss */
 body.neatline.show div.narrative a.back .arrow {
   font-size: 13px;
 }
-/* line 57, ../sass/style.scss */
+/* line 70, ../sass/style.scss */
 body.neatline.show div.narrative h1.title {
   margin: 0;
   padding-bottom: .2em;
 }
-/* line 65, ../sass/style.scss */
+/* line 78, ../sass/style.scss */
 body.neatline.show #static-bubble div.body a.close {
   font-size: 2em;
   line-height: .8em;
 }
-/* line 69, ../sass/style.scss */
+/* line 82, ../sass/style.scss */
 body.neatline.show #static-bubble div.body a.close:hover {
   background: none;
 }
-/* line 73, ../sass/style.scss */
+/* line 86, ../sass/style.scss */
 body.neatline.show #colophon {
   border-top: 1px solid blue;
   font-size: .8em;
