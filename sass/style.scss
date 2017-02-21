@@ -1,8 +1,17 @@
 @import url("https://fonts.googleapis.com/css?family=Prociono");
 
 $font: 'Prociono', serif;
+$titleFontSize: 32px;
+$titleFontLineHeight: 38px;
 
-    
+$narTan: #F0E8DB;
+$narTanHighlight: #d9bf9d;
+$narBrown: #615e4b;
+$narBlue: #738fb5;
+$narWhite: #ffffff;
+
+$bubbleBrown: #615e4b;
+$bubbleTan: #f1e8dc;
 
 
 * {
@@ -39,8 +48,6 @@ body{
  
 body.neatline.show {
   font-family: $font;
-
-
   div.exhibit {
       float: left;
       width: 1px;
@@ -50,10 +57,12 @@ body.neatline.show {
     }
   }
   div.narrative {
-      float: right;
-      overflow-y: scroll;
-      padding: 2em;
-      width: 500px;
+    background: $tan;
+    color:$brown;
+    float: right;
+    overflow-y: scroll;
+    padding: 2em;
+    width: 500px;
     a.back {
         display: inline-block;
         padding: 5px 8px;
@@ -64,8 +73,9 @@ body.neatline.show {
       }
     }
     h1.title {
-        margin: 0;
-        padding-bottom: .2em;
+      font-size:$titleFontSize;
+      line-height: $titleFontLineHeight;
+      margin-bottom: 1.0em;
     }    
     p {
     }    
