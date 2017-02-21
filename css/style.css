@@ -47,40 +47,40 @@ body.neatline.browse div.container p.title {
   font-weight: bold;
 }
 
-/* line 40, ../sass/style.scss */
+/* line 41, ../sass/style.scss */
 body.neatline.show {
   background: #fefefe;
   font-size: 16px;
 }
-/* line 43, ../sass/style.scss */
+/* line 44, ../sass/style.scss */
 body.neatline.show div.exhibit {
   float: left;
   width: 1px;
 }
-/* line 46, ../sass/style.scss */
+/* line 47, ../sass/style.scss */
 body.neatline.show div.exhibit #neatline, body.neatline.show div.exhibit #neatline-map {
   height: 100%;
   width: 100%;
 }
-/* line 51, ../sass/style.scss */
+/* line 52, ../sass/style.scss */
 body.neatline.show div.narrative {
   float: right;
   overflow-y: scroll;
   padding: 2em;
   width: 500px;
 }
-/* line 56, ../sass/style.scss */
+/* line 57, ../sass/style.scss */
 body.neatline.show div.narrative a.back {
   display: inline-block;
   padding: 5px 8px;
   margin-bottom: 1em;
   font-size: .8em;
 }
-/* line 61, ../sass/style.scss */
+/* line 62, ../sass/style.scss */
 body.neatline.show div.narrative a.back .arrow {
   font-size: 13px;
 }
-/* line 65, ../sass/style.scss */
+/* line 66, ../sass/style.scss */
 body.neatline.show div.narrative h1.title {
   margin: 0;
   padding-bottom: .2em;
@@ -88,31 +88,26 @@ body.neatline.show div.narrative h1.title {
   border-bottom: 1px solid #e6e6e6;
   font-size: 40px;
 }
-
-/* line 75, ../sass/style.scss */
+/* line 73, ../sass/style.scss */
 body.neatline.show div.narrative p {
   line-height: 1.7em;
 }
-
-/* line 78, ../sass/style.scss */
+/* line 77, ../sass/style.scss */
 body.neatline.show #static-bubble div.body {
   font-size: 17px;
 }
-
-/* line 81, ../sass/style.scss */
-body.neatline.show #static-bubble a.close {
+/* line 79, ../sass/style.scss */
+body.neatline.show #static-bubble div.body a.close {
   font-size: 2em;
   line-height: .8em;
 }
-
-/* line 85, ../sass/style.scss */
-body.neatline.show #static-bubble a.close:hover {
+/* line 83, ../sass/style.scss */
+body.neatline.show #static-bubble div.body a.close:hover {
   color: #006ebb;
   background: none;
 }
-
-/* line 89, ../sass/style.scss */
+/* line 88, ../sass/style.scss */
 body.neatline.show #colophon {
   border-top: 1px solid #e6e6e6;
-  font-size: 0.8em;
+  font-size: .8em;
 }

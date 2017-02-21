@@ -6,7 +6,7 @@
 }
 *::selection {
     background: #006ebb;
-    color: #fff
+    color: #fff;
 }
 
 body{
@@ -31,8 +31,9 @@ body{
       div.exhibit {
           margin: 5px 0;
       }
-    p.title {
-        font-weight: bold;  }      
+      p.title {
+          font-weight: bold;  
+      }      
     }
   }  
 
@@ -67,26 +68,29 @@ body.neatline.show {
         padding-bottom: .2em;
         font-weight: 200;
         border-bottom: 1px solid #e6e6e6;
-        font-size: 40px
+        font-size: 40px;
     }    
+    p {
+        line-height: 1.7em;
+    }    
+  }  
+  #static-bubble div.body {
+      font-size: 17px;
+    a.close {
+        font-size: 2em;
+        line-height: .8em;
+    }    
+    a.close:hover {
+        color: #006ebb;
+        background: none;
+    }    
+  }  
+  #colophon {
+      border-top: 1px solid #e6e6e6;
+      font-size: .8em;
   }  
 }
 
-body.neatline.show div.narrative p {
-    line-height: 1.7em
-}
-body.neatline.show #static-bubble div.body {
-    font-size: 17px
-}
-body.neatline.show #static-bubble a.close {
-    font-size: 2em;
-    line-height: .8em;
-}
-body.neatline.show #static-bubble a.close:hover {
-    color: #006ebb;
-    background: none
-}
-body.neatline.show #colophon {
-    border-top: 1px solid #e6e6e6;
-    font-size: .8em
-}
+
+
+
