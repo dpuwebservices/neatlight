@@ -24,8 +24,9 @@ $bubbleTan: #f1e8dc;
 *::selection {
 }
 
-body{
+body, html{
   margin: 0; 
+  background: $narTan;
 }
   body.neatline.browse {
 
@@ -98,7 +99,7 @@ body.neatline.show, body.neatline.fullscreen{
   #waypoints{
     color: $narBrown;
     font-size: $narFontSize + 4px;
-    background: rgba(lighten($narTan,4%), .7);
+    background: rgba(lighten($narTan,10%), .7);
     border-right: 2px solid darken($narTan, 10%);
     a.title{border-bottom:2px solid darken($narTan, 10%)};
     a.title:hover, a.title.selected{background:$narBlue; color:$narWhite;}
