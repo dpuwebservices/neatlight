@@ -88,45 +88,46 @@ body.neatline.show div#neatline-narrative [data-neatline-slug].selected, body.ne
 body.neatline.show #waypoints, body.neatline.fullscreen #waypoints {
   color: #615e4b;
   font-size: 18px;
-  background: rgba(255, 255, 255, 0.7);
+  background: none;
   border-right: 2px solid #e1d1b7;
 }
 /* line 104, ../sass/style.scss */
 body.neatline.show #waypoints a.title, body.neatline.fullscreen #waypoints a.title {
+  background: rgba(255, 255, 255, 0.7);
   border-bottom: 2px solid #e1d1b7;
 }
-/* line 105, ../sass/style.scss */
+/* line 108, ../sass/style.scss */
 body.neatline.show #waypoints a.title:hover, body.neatline.show #waypoints a.title.selected, body.neatline.fullscreen #waypoints a.title:hover, body.neatline.fullscreen #waypoints a.title.selected {
   background: #738fb5;
   color: #ffffff;
 }
-/* line 106, ../sass/style.scss */
+/* line 109, ../sass/style.scss */
 body.neatline.show #waypoints a.title.highlighted, body.neatline.fullscreen #waypoints a.title.highlighted {
   background: #b6c4d8;
   color: #615e4b;
 }
-/* line 110, ../sass/style.scss */
+/* line 113, ../sass/style.scss */
 body.neatline.show #static-bubble div.body a.close, body.neatline.fullscreen #static-bubble div.body a.close {
   font-size: 2em;
   line-height: .8em;
 }
-/* line 114, ../sass/style.scss */
+/* line 117, ../sass/style.scss */
 body.neatline.show #static-bubble div.body a.close:hover, body.neatline.fullscreen #static-bubble div.body a.close:hover {
   background: none;
 }
-/* line 118, ../sass/style.scss */
+/* line 121, ../sass/style.scss */
 body.neatline.show #colophon, body.neatline.fullscreen #colophon {
   border-top: 1px solid #d2ba93;
   font-size: 12px;
 }
-/* line 123, ../sass/style.scss */
+/* line 126, ../sass/style.scss */
 body.neatline.show #static-bubble, body.neatline.fullscreen #static-bubble {
   display: block;
   background: #615e4b;
   color: #f1e8dc;
   border-radius: 14px;
 }
-/* line 130, ../sass/style.scss */
+/* line 133, ../sass/style.scss */
 body.neatline.show #static-bubble .close, body.neatline.fullscreen #static-bubble .close {
   background: #f1e8dc;
   color: #615e4b;
@@ -135,13 +136,13 @@ body.neatline.show #static-bubble .close, body.neatline.fullscreen #static-bubbl
   border-radius: 5px;
   font-size: 22px;
 }
-/* line 138, ../sass/style.scss */
+/* line 141, ../sass/style.scss */
 body.neatline.show #static-bubble .title, body.neatline.fullscreen #static-bubble .title {
   display: inline;
   font-size: 2em;
   line-height: 1em;
 }
-/* line 143, ../sass/style.scss */
+/* line 146, ../sass/style.scss */
 body.neatline.show #static-bubble .subItemTitle, body.neatline.fullscreen #static-bubble .subItemTitle {
   display: block;
   font-size: 16px;
@@ -150,7 +151,7 @@ body.neatline.show #static-bubble .subItemTitle, body.neatline.fullscreen #stati
   padding: 0 7px;
   margin-top: 1.2em;
 }
-/* line 151, ../sass/style.scss */
+/* line 154, ../sass/style.scss */
 body.neatline.show #static-bubble .subItem, body.neatline.fullscreen #static-bubble .subItem {
   display: block;
   margin-bottom: .5em;
