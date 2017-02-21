@@ -4,7 +4,7 @@ $font: 'Prociono', serif;
 $titleFontSize: 32px;
 $titleFontLineHeight: 38px;
 
-$narTan: #F0E8DB;
+$narTan: rgb(240,232,219);
 $narTanHighlight: #d9bf9d;
 $narBrown: #615e4b;
 $narBlue: #738fb5;
@@ -40,7 +40,7 @@ body{
     }
   }  
 
- 
+ //Exhibit section
 body.neatline.show {
   font-family: $font;
   div.exhibit {
@@ -51,6 +51,8 @@ body.neatline.show {
         width: 100%;
     }
   }
+  
+  // Narrative Section
   div.narrative {
     a{
       color: darken($narTan, 60%); 
@@ -90,7 +92,16 @@ body.neatline.show {
       background: $narBlue;
       color:white;
     }    
-  }  
+  }
+
+  // Waypoints Section
+  #waypoints{
+    color: $narBrown;
+    background: rgba(lighten($narTan, 20%), .7);
+    border-right: 2px solid darken($narTan, 20%);
+    a.title:hover, a.title.selected{background:$narBlue; color:$narWhite;}
+  }
+  
   #static-bubble div.body {
     a.close {
         font-size: 2em;

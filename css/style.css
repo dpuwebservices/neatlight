@@ -35,9 +35,9 @@ body.neatline.show div.exhibit #neatline, body.neatline.show div.exhibit #neatli
   height: 100%;
   width: 100%;
 }
-/* line 54, ../sass/style.scss */
+/* line 56, ../sass/style.scss */
 body.neatline.show div.narrative {
-  background: #F0E8DB;
+  background: #f0e8db;
   color: #615e4b;
   font-size: 14px;
   line-height: 20px;
@@ -46,53 +46,64 @@ body.neatline.show div.narrative {
   padding: 2em;
   width: 500px;
 }
-/* line 55, ../sass/style.scss */
+/* line 57, ../sass/style.scss */
 body.neatline.show div.narrative a {
   color: #6c542d;
   text-decoration: underline;
 }
-/* line 59, ../sass/style.scss */
+/* line 61, ../sass/style.scss */
 body.neatline.show div.narrative a:hover {
   color: #738fb5;
 }
-/* line 68, ../sass/style.scss */
+/* line 70, ../sass/style.scss */
 body.neatline.show div.narrative a.back {
   display: inline-block;
   padding: 5px 8px;
   margin-bottom: 1em;
   font-size: 12px;
 }
-/* line 73, ../sass/style.scss */
+/* line 75, ../sass/style.scss */
 body.neatline.show div.narrative a.back .arrow {
   font-size: 14px;
 }
-/* line 77, ../sass/style.scss */
+/* line 79, ../sass/style.scss */
 body.neatline.show div.narrative h1.title {
   font-size: 32px;
   line-height: 38px;
   margin-bottom: 1.0em;
 }
-/* line 84, ../sass/style.scss */
+/* line 86, ../sass/style.scss */
 body.neatline.show div.narrative [data-neatline-slug] {
   background: #d9bf9d;
   cursor: pointer;
   padding: 0.5px;
 }
-/* line 89, ../sass/style.scss */
+/* line 91, ../sass/style.scss */
 body.neatline.show div.narrative [data-neatline-slug].selected, body.neatline.show div.narrative [data-neatline-slug].hover {
   background: #738fb5;
   color: white;
 }
-/* line 95, ../sass/style.scss */
+/* line 98, ../sass/style.scss */
+body.neatline.show #waypoints {
+  color: #615e4b;
+  background: rgba(255, 255, 255, 0.7);
+  border-right: 2px solid #d2ba93;
+}
+/* line 102, ../sass/style.scss */
+body.neatline.show #waypoints a.title:hover, body.neatline.show #waypoints a.title.selected {
+  background: #738fb5;
+  color: #ffffff;
+}
+/* line 106, ../sass/style.scss */
 body.neatline.show #static-bubble div.body a.close {
   font-size: 2em;
   line-height: .8em;
 }
-/* line 99, ../sass/style.scss */
+/* line 110, ../sass/style.scss */
 body.neatline.show #static-bubble div.body a.close:hover {
   background: none;
 }
-/* line 103, ../sass/style.scss */
+/* line 114, ../sass/style.scss */
 body.neatline.show #colophon {
   border-top: 1px solid #d2ba93;
   font-size: 12px;
