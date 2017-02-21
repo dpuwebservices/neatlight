@@ -1,7 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Fjalla+One|Yanone+Kaffeesatz");
+@import url("https://fonts.googleapis.com/css?family=Prociono");
 
-$headerFont: 'Yanone Kaffeesatz', sans-serif;
-$bodyFont: 'Fjalla One', sans-serif;
+$font: 'Prociono', serif;
 
     
 
@@ -10,7 +9,6 @@ $bodyFont: 'Fjalla One', sans-serif;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-
 }
 *::selection {
 }
@@ -40,11 +38,9 @@ body{
 
  
 body.neatline.show {
-  font-family: $bodyFont;
+  font-family: $font;
 
-  h1, h2, h3, h4, h5, h6{
-    font-family: $headerFont;
-  }  
+
   div.exhibit {
       float: left;
       width: 1px;
