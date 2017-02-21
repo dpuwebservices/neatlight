@@ -17,36 +17,34 @@ body {
   font-weight: 300;
   margin: 0;
 }
+/* line 15, ../sass/style.scss */
+body a {
+  text-decoration: none;
+  color: #006ebb;
+}
+/* line 19, ../sass/style.scss */
+body a:hover {
+  text-decoration: underline;
+}
 
-/* line 16, ../sass/style.scss */
+/* line 24, ../sass/style.scss */
 body.neatline.browse {
   font-size: 12px;
   background: #fcfcfc;
 }
-/* line 19, ../sass/style.scss */
+/* line 27, ../sass/style.scss */
 body.neatline.browse div.container {
   font-size: 1.2em;
   margin: 3em auto;
   width: 50%;
 }
-/* line 23, ../sass/style.scss */
+/* line 31, ../sass/style.scss */
 body.neatline.browse div.container div.exhibit {
   margin: 5px 0;
 }
-/* line 26, ../sass/style.scss */
+/* line 34, ../sass/style.scss */
 body.neatline.browse div.container p.title {
   font-weight: bold;
-}
-
-/* line 32, ../sass/style.scss */
-a {
-  text-decoration: none;
-  color: #006ebb;
-}
-
-/* line 36, ../sass/style.scss */
-a:hover {
-  text-decoration: underline;
 }
 
 /* line 41, ../sass/style.scss */
