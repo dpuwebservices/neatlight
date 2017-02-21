@@ -8,7 +8,6 @@
 }
 
 body{
-  font-weight: 300;
   margin: 0;
   a {
       text-decoration: none;
@@ -19,23 +18,20 @@ body{
   
 }
   body.neatline.browse {
-      font-size: 12px;
+
     div.container {
-        font-size: 1.2em;
         margin: 3em auto;
         width: 50%;
       div.exhibit {
           margin: 5px 0;
       }
       p.title {
-          font-weight: bold;  
       }      
     }
   }  
 
  
 body.neatline.show {
-    font-size: 16px;
   div.exhibit {
       float: left;
       width: 1px;
@@ -61,15 +57,11 @@ body.neatline.show {
     h1.title {
         margin: 0;
         padding-bottom: .2em;
-        font-weight: 200;
-        font-size: 40px;
     }    
     p {
-        line-height: 1.7em;
     }    
   }  
   #static-bubble div.body {
-      font-size: 17px;
     a.close {
         font-size: 2em;
         line-height: .8em;
@@ -79,7 +71,7 @@ body.neatline.show {
     }    
   }  
   #colophon {
-      border-top: 1px solid red;
+      border-top: 1px solid blue;
       font-size: .8em;
   }  
 }

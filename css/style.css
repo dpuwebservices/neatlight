@@ -8,95 +8,71 @@
 
 /* line 10, ../sass/style.scss */
 body {
-  font-weight: 300;
   margin: 0;
 }
-/* line 13, ../sass/style.scss */
+/* line 12, ../sass/style.scss */
 body a {
   text-decoration: none;
 }
-/* line 16, ../sass/style.scss */
+/* line 15, ../sass/style.scss */
 body a:hover {
   text-decoration: underline;
 }
 
-/* line 21, ../sass/style.scss */
-body.neatline.browse {
-  font-size: 12px;
-}
-/* line 23, ../sass/style.scss */
+/* line 22, ../sass/style.scss */
 body.neatline.browse div.container {
-  font-size: 1.2em;
   margin: 3em auto;
   width: 50%;
 }
-/* line 27, ../sass/style.scss */
+/* line 25, ../sass/style.scss */
 body.neatline.browse div.container div.exhibit {
   margin: 5px 0;
 }
-/* line 30, ../sass/style.scss */
-body.neatline.browse div.container p.title {
-  font-weight: bold;
-}
 
-/* line 37, ../sass/style.scss */
-body.neatline.show {
-  font-size: 16px;
-}
-/* line 39, ../sass/style.scss */
+/* line 35, ../sass/style.scss */
 body.neatline.show div.exhibit {
   float: left;
   width: 1px;
 }
-/* line 42, ../sass/style.scss */
+/* line 38, ../sass/style.scss */
 body.neatline.show div.exhibit #neatline, body.neatline.show div.exhibit #neatline-map {
   height: 100%;
   width: 100%;
 }
-/* line 47, ../sass/style.scss */
+/* line 43, ../sass/style.scss */
 body.neatline.show div.narrative {
   float: right;
   overflow-y: scroll;
   padding: 2em;
   width: 500px;
 }
-/* line 52, ../sass/style.scss */
+/* line 48, ../sass/style.scss */
 body.neatline.show div.narrative a.back {
   display: inline-block;
   padding: 5px 8px;
   margin-bottom: 1em;
   font-size: .8em;
 }
-/* line 57, ../sass/style.scss */
+/* line 53, ../sass/style.scss */
 body.neatline.show div.narrative a.back .arrow {
   font-size: 13px;
 }
-/* line 61, ../sass/style.scss */
+/* line 57, ../sass/style.scss */
 body.neatline.show div.narrative h1.title {
   margin: 0;
   padding-bottom: .2em;
-  font-weight: 200;
-  font-size: 40px;
 }
-/* line 67, ../sass/style.scss */
-body.neatline.show div.narrative p {
-  line-height: 1.7em;
-}
-/* line 71, ../sass/style.scss */
-body.neatline.show #static-bubble div.body {
-  font-size: 17px;
-}
-/* line 73, ../sass/style.scss */
+/* line 65, ../sass/style.scss */
 body.neatline.show #static-bubble div.body a.close {
   font-size: 2em;
   line-height: .8em;
 }
-/* line 77, ../sass/style.scss */
+/* line 69, ../sass/style.scss */
 body.neatline.show #static-bubble div.body a.close:hover {
   background: none;
 }
-/* line 81, ../sass/style.scss */
+/* line 73, ../sass/style.scss */
 body.neatline.show #colophon {
-  border-top: 1px solid red;
+  border-top: 1px solid blue;
   font-size: .8em;
 }
