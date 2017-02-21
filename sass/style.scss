@@ -8,32 +8,36 @@
     background: #006ebb;
     color: #fff
 }
-body {
-    font-weight: 300;
-    margin: 0
+
+body{
+  font-weight: 300;
+  margin: 0;
+  .neatline.browse {
+      font-size: 12px;
+      background: #fcfcfc;
+    div.container {
+        font-size: 1.2em;
+        margin: 3em auto;
+        width: 50%;
+      div.exhibit {
+          margin: 5px 0
+      }
+    p.title {
+        font-weight: bold
+    }      
+    }
+  }  
 }
+
 a {
     text-decoration: none;
     color: #006ebb;
 }
 a:hover {
-    text-decoration: underline
+    text-decoration: underline;
 }
-body.neatline.browse {
-    font-size: 12px;
-    background: #fcfcfc;
-}
-body.neatline.browse div.container {
-    font-size: 1.2em;
-    margin: 3em auto;
-    width: 50%;
-}
-body.neatline.browse div.container div.exhibit {
-    margin: 5px 0
-}
-body.neatline.browse div.container p.title {
-    font-weight: bold
-}
+
+ 
 body.neatline.show {
     background: #fefefe;
     font-size: 16px;
