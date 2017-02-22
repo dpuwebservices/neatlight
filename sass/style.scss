@@ -21,8 +21,6 @@ $bubbleTan: #f1e8dc;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
 }
-*::selection {
-}
 
 body, html{
   margin: 0; 
@@ -169,7 +167,7 @@ body.neatline.show, body.neatline.fullscreen{
     background: rgba(darken($narTan, 10%), .1);
   }
   //remove formatting 
-  strong, em, h1, h2, h3, h4, h5, h6, span, div{
+  strong, em, h1, h2, h3, h4, h5, h6, span, div, li{
    font-weight:normal;
    font-style:normal;
    font-size:12px;
