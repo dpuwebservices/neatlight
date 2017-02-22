@@ -26,7 +26,7 @@ $bubbleTan: #f1e8dc;
 
 body, html{
   margin: 0; 
-  background: $narTan;
+  background: rgba(lighten($narTan, 10%), .7);
 }
   body.neatline.browse {
 
@@ -161,6 +161,14 @@ body.neatline.show, body.neatline.fullscreen{
 }
 
 #neatline.Waypoints.Simile #simile, #neatline.Simile #simile {
+  height: 120px;
+  .timeline-band-inner{
+    border: 2px solid darken($narTan, 10%);
+  }
+  .timeline-band-layer {
+    background: rgba(darken($narTan, 10%), .1);
+  }
+  //remove formatting 
   strong, em, h1, h2, h3, h4, h5, h6, span, div{
    font-weight:normal;
    font-style:normal;

@@ -9,7 +9,7 @@
 /* line 27, ../sass/style.scss */
 body, html {
   margin: 0;
-  background: #f0e8db;
+  background: rgba(255, 255, 255, 0.7);
 }
 
 /* line 33, ../sass/style.scss */
@@ -157,7 +157,19 @@ body.neatline.show #static-bubble .subItem, body.neatline.fullscreen #static-bub
   margin-bottom: .5em;
 }
 
-/* line 164, ../sass/style.scss */
+/* line 163, ../sass/style.scss */
+#neatline.Waypoints.Simile #simile, #neatline.Simile #simile {
+  height: 120px;
+}
+/* line 165, ../sass/style.scss */
+#neatline.Waypoints.Simile #simile .timeline-band-inner, #neatline.Simile #simile .timeline-band-inner {
+  border: 2px solid #e1d1b7;
+}
+/* line 168, ../sass/style.scss */
+#neatline.Waypoints.Simile #simile .timeline-band-layer, #neatline.Simile #simile .timeline-band-layer {
+  background: rgba(225, 209, 183, 0.1);
+}
+/* line 172, ../sass/style.scss */
 #neatline.Waypoints.Simile #simile strong, #neatline.Waypoints.Simile #simile em, #neatline.Waypoints.Simile #simile h1, #neatline.Waypoints.Simile #simile h2, #neatline.Waypoints.Simile #simile h3, #neatline.Waypoints.Simile #simile h4, #neatline.Waypoints.Simile #simile h5, #neatline.Waypoints.Simile #simile h6, #neatline.Waypoints.Simile #simile span, #neatline.Waypoints.Simile #simile div, #neatline.Simile #simile strong, #neatline.Simile #simile em, #neatline.Simile #simile h1, #neatline.Simile #simile h2, #neatline.Simile #simile h3, #neatline.Simile #simile h4, #neatline.Simile #simile h5, #neatline.Simile #simile h6, #neatline.Simile #simile span, #neatline.Simile #simile div {
   font-weight: normal;
   font-style: normal;
