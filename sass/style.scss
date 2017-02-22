@@ -164,7 +164,7 @@ body.neatline.show, body.neatline.fullscreen{
     border: 2px solid darken($narTan, 10%);
   }
   .timeline-band-layer {
-    background: rgba(darken($narTan, 10%), .1);
+    background: rgba($narTan, .1);
   }
   //remove formatting 
   strong, em, h1, h2, h3, h4, h5, h6, span, div, li{
