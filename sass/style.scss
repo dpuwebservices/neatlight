@@ -24,7 +24,7 @@ $bubbleTan: #f1e8dc;
 
 body, html{
   margin: 0; 
-  background: rgba(lighten($narTan, 10%), .7);
+  background: $narTan;
 }
   body.neatline.browse {
 
