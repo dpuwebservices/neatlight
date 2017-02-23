@@ -100,6 +100,14 @@ body.neatline.show, body.neatline.fullscreen{
     background: none;
     border-right: 2px solid darken($narTan, 10%);
     a.title{
+      strong, em, h1, h2, h3, h4, h5, h6, span, div, li{
+       font-weight:normal;
+       font-style:normal;
+       font-size: 18px;
+       line-height: 1.4em;
+      }
+      font-size: 18px;
+      line-height: 1.4em;
       background: rgba(lighten($narTan, 10%), .7);
       border-bottom:2px solid darken($narTan, 10%);
     }
