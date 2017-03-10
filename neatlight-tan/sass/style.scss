@@ -12,8 +12,9 @@ $narWhite: #ffffff;
 $narFontSize: 14px;
 $narFontLineHeight: 20px;
 
-$bubbleBrown: #615e4b;
+$bubbleBrown: rgba(97, 94, 75, 0.9);
 $bubbleTan: #f1e8dc;
+$wordBreak: break-word;
 
 
 * {
@@ -25,6 +26,10 @@ $bubbleTan: #f1e8dc;
 body, html{
   margin: 0; 
   background: $narTan;
+}
+h1 {
+   line-height: $titleFontLineHeight;
+    font-size: $titleFontSize;
 }
   body.neatline.browse {
 
@@ -135,6 +140,7 @@ body.neatline.show, body.neatline.fullscreen{
     color: $bubbleTan;
     border-radius:14px;
     $fontSize: 14px;
+    opacity: initial;
     
     .close{
       background: $bubbleTan;
@@ -159,7 +165,9 @@ body.neatline.show, body.neatline.fullscreen{
     }
     .subItem{
       display:block;
-      margin-bottom: .5em;
+      margin-bottom: .5em;  
+      padding: 5px 7px 0;
+      word-wrap: $wordBreak;
     }
     
     
@@ -181,7 +189,3 @@ body.neatline.show, body.neatline.fullscreen{
    font-size:12px;
   }
 }
-
-
-
-
