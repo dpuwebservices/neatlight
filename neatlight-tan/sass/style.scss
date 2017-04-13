@@ -1,18 +1,19 @@
 @import url("https://fonts.googleapis.com/css?family=Prociono");
 
 $font: 'Prociono', serif;
-$titleFontSize: 32px;
-$titleFontLineHeight: 38px;
+$titleFontSize: 24px;
+$titleFontLineHeight: 28px;
 
 $narTan: rgb(240,232,219);
 $narTanHighlight: rgb(217,191,157);
-$narBrown: #615e4b;
-$narBlue: #738fb5;
+$narLinkHighlight: rgb(255,204,161);
+$darkBrown: rgb(83, 65, 53);
+$narBrown: rgb(114,86,65);
 $narWhite: #ffffff;
 $narFontSize: 14px;
 $narFontLineHeight: 20px;
 
-$bubbleBrown: rgba(97, 94, 75, 0.9);
+$bubbleBrown: rgba(83, 65, 53, 0.9);
 $bubbleTan: #f1e8dc;
 $wordBreak: break-word;
 
@@ -26,11 +27,24 @@ $wordBreak: break-word;
 body, html{
   margin: 0; 
   background: $narTan;
+  font-family: $font;
 }
+a {
+    color: $narBrown;
+    font-size: $narFontSize;
+}
+
 h1 {
-   line-height: $titleFontLineHeight;
+    line-height: $titleFontLineHeight;
     font-size: $titleFontSize;
+    color: $narBrown;
 }
+
+p.title {
+    font-size: $titleFontSize;
+    color: $narBrown;
+}
+
   body.neatline.browse {
 
     div.container {
@@ -46,7 +60,6 @@ h1 {
 
  //Exhibit section
 body.neatline.show, body.neatline.fullscreen{
-  font-family: $font;
   div.exhibit {
       float: left;
       width: 1px;
@@ -59,12 +72,12 @@ body.neatline.show, body.neatline.fullscreen{
   // Narrative Section
   div#neatline-narrative {
     a{
-      color: darken($narTan, 60%); 
+      color: $darkBrown;
       text-decoration: underline; 
     }
-    a:hover{color: $narBlue;}
+    a:hover{color: $narBrown;}
     background: $narTan;
-    color:$narBrown;
+    color:$darkBrown;
     font-size: $narFontSize;
     line-height: $narFontLineHeight;
     float: right;
@@ -81,19 +94,20 @@ body.neatline.show, body.neatline.fullscreen{
       }
     }
     h1.title {
-      font-size:$titleFontSize;
-      line-height: $titleFontLineHeight;
+      font-size:$titleFontSize + 8px;
+      line-height: $titleFontLineHeight + 10px;
       margin-bottom: 1.0em;
     }    
     p {
     }
     [data-neatline-slug]{
-      background: $narTanHighlight;
+      background: $narLinkHighlight;
       cursor:pointer;
       padding:0.5px;
+      color: $darkBrown;
     }
     [data-neatline-slug].selected,[data-neatline-slug].hover {
-      background: $narBlue;
+      background: $narBrown;
       color:white;
     }    
   }
@@ -114,10 +128,10 @@ body.neatline.show, body.neatline.fullscreen{
       font-size: 18px;
       line-height: 1.4em;
       background: rgba(lighten($narTan, 10%), .7);
-      border-bottom:2px solid darken($narTan, 10%);
+      border-bottom:2px solid $narLinkHighlight;
     }
-    a.title:hover, a.title.selected{background:$narBlue; color:$narWhite;}
-    a.title.highlighted{background:lighten($narBlue, 20%); color: $narBrown;}
+    a.title:hover, a.title.selected{background:$narBrown; color:$narWhite;}
+    a.title.highlighted{background: $narLinkHighlight; color: $narBrown;}
   }
   
   #static-bubble div.body {
@@ -143,8 +157,8 @@ body.neatline.show, body.neatline.fullscreen{
     opacity: initial;
     
     .close{
-      background: $bubbleTan;
-      color: $bubbleBrown;
+      background: $narTan;
+      color: $darkBrown;
       font-weight: bold;
       padding: 0 7px;
       border-radius: 5px;
@@ -159,7 +173,7 @@ body.neatline.show, body.neatline.fullscreen{
       display:block;
       font-size: $fontSize + 2px;
       line-height: 30px;
-      background: #524f3c;
+      background: $darkBrown;
       padding: 0 7px;
       margin-top: 1.2em;
     }
@@ -169,7 +183,18 @@ body.neatline.show, body.neatline.fullscreen{
       padding: 5px 7px 0;
       word-wrap: $wordBreak;
     }
-    
+    .content.body p {
+      word-wrap: $wordBreak;
+      font-size: $narFontSize;
+      a {
+        color: $narTan;
+        font-size: $narFontSize;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    }
     
   }
 }
@@ -189,3 +214,7 @@ body.neatline.show, body.neatline.fullscreen{
    font-size:12px;
   }
 }
+
+
+
+
