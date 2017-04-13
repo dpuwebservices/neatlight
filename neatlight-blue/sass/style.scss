@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css?family=Prociono");
+
+$font: 'Prociono', serif;
+$titleFontSize: 24px;
+$titleFontLineHeight: 28px;
+
+$narTan: rgb(240,232,219);
+$narTanHighlight: rgb(217,191,157);
+$narLinkHighlight: rgb(255,204,161);
+$darkBrown: rgb(83, 65, 53);
+$narBrown: rgb(114,86,65);
+$narWhite: #ffffff;
+$narFontSize: 14px;
+$narFontLineHeight: 20px;
+
+$bubbleBrown: rgba(83, 65, 53, 0.9);
+$bubbleTan: #f1e8dc;
+$wordBreak: break-word;
+
+
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body, html{
+  margin: 0; 
+  background: $narTan;
+  font-family: $font;
+}
+a {
+    color: $narBrown;
+    font-size: $narFontSize;
+}
+
+h1 {
+    line-height: $titleFontLineHeight;
+    font-size: $titleFontSize;
+    color: $narBrown;
+}
+
+p.title {
+    font-size: $titleFontSize;
+    color: $narBrown;
+}
+
+  body.neatline.browse {
+
+    div.container {
+        margin: 3em auto;
+        width: 50%;
+      div.exhibit {
+          margin: 5px 0;
+      }
+      p.title {
+      }      
+    }
+  }  
+
+ //Exhibit section
+body.neatline.show, body.neatline.fullscreen{
+  div.exhibit {
+      float: left;
+      width: 1px;
+    #neatline, #neatline-map {
+        height: 100%;
+        width: 100%;
+    }
+  }
+  
+  // Narrative Section
+  div#neatline-narrative {
+    a{
+      color: $darkBrown;
+      text-decoration: underline; 
+    }
+    a:hover{color: $narBrown;}
+    background: $narTan;
+    color:$darkBrown;
+    font-size: $narFontSize;
+    line-height: $narFontLineHeight;
+    float: right;
+    overflow-y: scroll;
+    padding: 2em;
+    width: 480px;
+    a.back {
+        display: inline-block;
+        padding: 5px 8px;
+        margin-bottom: 1em;
+        font-size: $narFontSize - 2px;
+      .arrow {
+          font-size: $narFontSize;
+      }
+    }
+    h1.title {
+      font-size:$titleFontSize + 8px;
+      line-height: $titleFontLineHeight + 10px;
+      margin-bottom: 1.0em;
+    }    
+    p {
+    }
+    [data-neatline-slug]{
+      background: $narLinkHighlight;
+      cursor:pointer;
+      padding:0.5px;
+      color: $darkBrown;
+    }
+    [data-neatline-slug].selected,[data-neatline-slug].hover {
+      background: $narBrown;
+      color:white;
+    }    
+  }
+
+  // Waypoints Section
+  #waypoints{
+    color: $narBrown;
+    font-size: $narFontSize + 4px;
+    background: none;
+    border-right: 2px solid darken($narTan, 10%);
+    a.title{
+      strong, em, h1, h2, h3, h4, h5, h6, span, div, li{
+       font-weight:normal;
+       font-style:normal;
+       font-size: 18px;
+       line-height: 1.4em;
+      }
+      font-size: 18px;
+      line-height: 1.4em;
+      background: rgba(lighten($narTan, 10%), .7);
+      border-bottom:2px solid $narLinkHighlight;
+    }
+    a.title:hover, a.title.selected{background:$narBrown; color:$narWhite;}
+    a.title.highlighted{background: $narLinkHighlight; color: $narBrown;}
+  }
+  
+  #static-bubble div.body {
+    a.close {
+        font-size: 2em;
+        line-height: .8em;
+    }    
+    a.close:hover {
+        background: none;
+    }    
+  }  
+  #colophon {
+      border-top: 1px solid darken($narTan, 20%);
+      font-size: $narFontSize - 2px;
+  }  
+  
+  #static-bubble{
+    display:block;
+    background: $bubbleBrown;
+    color: $bubbleTan;
+    border-radius:14px;
+    $fontSize: 14px;
+    opacity: initial;
+    
+    .close{
+      background: $narTan;
+      color: $darkBrown;
+      font-weight: bold;
+      padding: 0 7px;
+      border-radius: 5px;
+      font-size: 22px;
+    }
+    .title{
+      display:inline;
+      font-size: 2em;
+      line-height: 1em;
+    }
+    .subItemTitle{
+      display:block;
+      font-size: $fontSize + 2px;
+      line-height: 30px;
+      background: $darkBrown;
+      padding: 0 7px;
+      margin-top: 1.2em;
+    }
+    .subItem{
+      display:block;
+      margin-bottom: .5em;  
+      padding: 5px 7px 0;
+      word-wrap: $wordBreak;
+    }
+    .content.body p {
+      word-wrap: $wordBreak;
+      font-size: $narFontSize;
+      a {
+        color: $narTan;
+        font-size: $narFontSize;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+    
+  }
+}
+
+#neatline.Waypoints.Simile #simile, #neatline.Simile #simile {
+  height: 120px;
+  .timeline-band-inner{
+    border: 2px solid darken($narTan, 10%);
+  }
+  .timeline-band-layer {
+    background: rgba($narTan, .1);
+  }
+  //remove formatting 
+  strong, em, h1, h2, h3, h4, h5, h6, span, div, li{
+   font-weight:normal;
+   font-style:normal;
+   font-size:12px;
+  }
+}
+
+
+
+
