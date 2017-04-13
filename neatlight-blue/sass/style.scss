@@ -1,22 +1,26 @@
-@import url("https://fonts.googleapis.com/css?family=Prociono");
+@import url("https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz");
 
-$font: 'Prociono', serif;
-$titleFontSize: 24px;
+$font: 'Yanone Kaffeesatz', sans-serif;
+$titleFontSize: 28px;
 $titleFontLineHeight: 28px;
+$titleFontWeight: 500;
 
-$narTan: rgb(240,232,219);
-$narTanHighlight: rgb(217,191,157);
-$narLinkHighlight: rgb(255,204,161);
-$darkBrown: rgb(83, 65, 53);
-$narBrown: rgb(114,86,65);
+$narBlueHighlight: rgb(42,127,158);
+$narDarkBlue: rgb(21,65,94);
+$narBlue: rgb(10,41,61);
 $narWhite: #ffffff;
-$narFontSize: 14px;
-$narFontLineHeight: 20px;
+$narFontSize: 18px;
+$narFontLineHeight: 24px;
+$linkBlue: rgb(0,197,255);
 
-$bubbleBrown: rgba(83, 65, 53, 0.9);
+$bubbleBlue: rgba(28, 111, 141, 0.9);
 $bubbleTan: #f1e8dc;
 $wordBreak: break-word;
 
+$lightBlue: rgb(0,255,255);
+$timelineBlue: rgba(0, 250, 255, 0.1);
+
+$highlightedPadding: 3px 3px 0px;
 
 * {
     box-sizing: border-box;
@@ -26,23 +30,23 @@ $wordBreak: break-word;
 
 body, html{
   margin: 0; 
-  background: $narTan;
+  background: $narBlue;
+  color: $narWhite;
   font-family: $font;
 }
 a {
-    color: $narBrown;
+    color: $linkBlue;
     font-size: $narFontSize;
 }
 
 h1 {
     line-height: $titleFontLineHeight;
     font-size: $titleFontSize;
-    color: $narBrown;
+    font-weight: $titleFontWeight;
 }
 
 p.title {
     font-size: $titleFontSize;
-    color: $narBrown;
 }
 
   body.neatline.browse {
@@ -72,12 +76,12 @@ body.neatline.show, body.neatline.fullscreen{
   // Narrative Section
   div#neatline-narrative {
     a{
-      color: $darkBrown;
+      color: $linkBlue; 
       text-decoration: underline; 
     }
-    a:hover{color: $narBrown;}
-    background: $narTan;
-    color:$darkBrown;
+    a:hover{color: $narBlueHighlight;}
+    background: $narDarkBlue;
+    color:$narWhite;
     font-size: $narFontSize;
     line-height: $narFontLineHeight;
     float: right;
@@ -94,30 +98,34 @@ body.neatline.show, body.neatline.fullscreen{
       }
     }
     h1.title {
-      font-size:$titleFontSize + 8px;
+      font-size:$titleFontSize + 12px;
       line-height: $titleFontLineHeight + 10px;
       margin-bottom: 1.0em;
-    }    
+    }
+    div#neatline-narrative a:hover {
+      font-color: $narBlueHighlight;
+    }
     p {
+      color: rgba($narWhite, .9);
     }
     [data-neatline-slug]{
-      background: $narLinkHighlight;
+      background: $bubbleBlue;
       cursor:pointer;
-      padding:0.5px;
-      color: $darkBrown;
+      padding: $highlightedPadding;
     }
     [data-neatline-slug].selected,[data-neatline-slug].hover {
-      background: $narBrown;
+      @extend [data-neatline-slug];
+      background: $narBlue;
       color:white;
     }    
   }
 
   // Waypoints Section
   #waypoints{
-    color: $narBrown;
+    color: $narDarkBlue;
     font-size: $narFontSize + 4px;
     background: none;
-    border-right: 2px solid darken($narTan, 10%);
+    border-right: 2px solid darken($narBlue, 10%);
     a.title{
       strong, em, h1, h2, h3, h4, h5, h6, span, div, li{
        font-weight:normal;
@@ -126,12 +134,13 @@ body.neatline.show, body.neatline.fullscreen{
        line-height: 1.4em;
       }
       font-size: 18px;
+      color: $narDarkBlue;
       line-height: 1.4em;
-      background: rgba(lighten($narTan, 10%), .7);
-      border-bottom:2px solid $narLinkHighlight;
+      background: $lightBlue;
+      border-bottom:2px solid $narBlueHighlight;
     }
-    a.title:hover, a.title.selected{background:$narBrown; color:$narWhite;}
-    a.title.highlighted{background: $narLinkHighlight; color: $narBrown;}
+    a.title:hover, a.title.selected{background:$narBlue; color:$narWhite;}
+    a.title.highlighted{background:lighten($narBlue, 20%); color: $narWhite;}
   }
   
   #static-bubble div.body {
@@ -144,21 +153,21 @@ body.neatline.show, body.neatline.fullscreen{
     }    
   }  
   #colophon {
-      border-top: 1px solid darken($narTan, 20%);
+      border-top: 1px solid $narWhite;
       font-size: $narFontSize - 2px;
   }  
   
   #static-bubble{
     display:block;
-    background: $bubbleBrown;
-    color: $bubbleTan;
+    background: $bubbleBlue;
+    color: $narWhite;
     border-radius:14px;
     $fontSize: 14px;
     opacity: initial;
     
     .close{
-      background: $narTan;
-      color: $darkBrown;
+      background: $narDarkBlue;
+      color: $narWhite;
       font-weight: bold;
       padding: 0 7px;
       border-radius: 5px;
@@ -171,9 +180,9 @@ body.neatline.show, body.neatline.fullscreen{
     }
     .subItemTitle{
       display:block;
-      font-size: $fontSize + 2px;
+      font-size: $narFontSize;
       line-height: 30px;
-      background: $darkBrown;
+      background: rgba(21,65,94, 0.7);
       padding: 0 7px;
       margin-top: 1.2em;
     }
@@ -182,12 +191,18 @@ body.neatline.show, body.neatline.fullscreen{
       margin-bottom: .5em;  
       padding: 5px 7px 0;
       word-wrap: $wordBreak;
+      font-size: $narFontSize;
+    }
+    .description {
+      font-size: $narFontSize;
+      line-height: $narFontLineHeight;
+      padding: 15px 0 0;
     }
     .content.body p {
       word-wrap: $wordBreak;
       font-size: $narFontSize;
       a {
-        color: $narTan;
+        color: $linkBlue;
         font-size: $narFontSize;
         text-decoration: none;
       }
@@ -202,10 +217,10 @@ body.neatline.show, body.neatline.fullscreen{
 #neatline.Waypoints.Simile #simile, #neatline.Simile #simile {
   height: 120px;
   .timeline-band-inner{
-    border: 2px solid darken($narTan, 10%);
+    border: 2px solid $narBlueHighlight;
   }
   .timeline-band-layer {
-    background: rgba($narTan, .1);
+    background: $timelineBlue;
   }
   //remove formatting 
   strong, em, h1, h2, h3, h4, h5, h6, span, div, li{

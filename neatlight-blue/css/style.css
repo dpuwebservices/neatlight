@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Prociono");
+@import url("https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz");
 * {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -6,21 +6,21 @@
 
 body, html {
   margin: 0;
-  background: #f0e8db;
-  font-family: "Prociono", serif; }
+  background: #0a293d;
+  color: #ffffff;
+  font-family: "Yanone Kaffeesatz", sans-serif; }
 
 a {
-  color: #725641;
-  font-size: 14px; }
+  color: #00c5ff;
+  font-size: 18px; }
 
 h1 {
   line-height: 28px;
-  font-size: 24px;
-  color: #725641; }
+  font-size: 28px;
+  font-weight: 500; }
 
 p.title {
-  font-size: 24px;
-  color: #725641; }
+  font-size: 28px; }
 
 body.neatline.browse div.container {
   margin: 3em auto;
@@ -35,76 +35,80 @@ body.neatline.show div.exhibit, body.neatline.fullscreen div.exhibit {
     height: 100%;
     width: 100%; }
 body.neatline.show div#neatline-narrative, body.neatline.fullscreen div#neatline-narrative {
-  background: #f0e8db;
-  color: #534135;
-  font-size: 14px;
-  line-height: 20px;
+  background: #15415e;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 24px;
   float: right;
   overflow-y: scroll;
   padding: 2em;
   width: 480px; }
   body.neatline.show div#neatline-narrative a, body.neatline.fullscreen div#neatline-narrative a {
-    color: #534135;
+    color: #00c5ff;
     text-decoration: underline; }
   body.neatline.show div#neatline-narrative a:hover, body.neatline.fullscreen div#neatline-narrative a:hover {
-    color: #725641; }
+    color: #2a7f9e; }
   body.neatline.show div#neatline-narrative a.back, body.neatline.fullscreen div#neatline-narrative a.back {
     display: inline-block;
     padding: 5px 8px;
     margin-bottom: 1em;
-    font-size: 12px; }
+    font-size: 16px; }
     body.neatline.show div#neatline-narrative a.back .arrow, body.neatline.fullscreen div#neatline-narrative a.back .arrow {
-      font-size: 14px; }
+      font-size: 18px; }
   body.neatline.show div#neatline-narrative h1.title, body.neatline.fullscreen div#neatline-narrative h1.title {
-    font-size: 32px;
+    font-size: 40px;
     line-height: 38px;
     margin-bottom: 1.0em; }
-  body.neatline.show div#neatline-narrative [data-neatline-slug], body.neatline.fullscreen div#neatline-narrative [data-neatline-slug] {
-    background: #ffcca1;
+  body.neatline.show div#neatline-narrative div#neatline-narrative a:hover, body.neatline.fullscreen div#neatline-narrative div#neatline-narrative a:hover {
+    font-color: #2a7f9e; }
+  body.neatline.show div#neatline-narrative p, body.neatline.fullscreen div#neatline-narrative p {
+    color: rgba(255, 255, 255, 0.9); }
+  body.neatline.show div#neatline-narrative [data-neatline-slug], body.neatline.show div#neatline-narrative [data-neatline-slug].selected, body.neatline.show div#neatline-narrative [data-neatline-slug].hover, body.neatline.fullscreen div#neatline-narrative [data-neatline-slug], body.neatline.fullscreen div#neatline-narrative [data-neatline-slug].selected, body.neatline.fullscreen div#neatline-narrative [data-neatline-slug].hover {
+    background: rgba(28, 111, 141, 0.9);
     cursor: pointer;
-    padding: 0.5px;
-    color: #534135; }
-  body.neatline.show div#neatline-narrative [data-neatline-slug].selected, body.neatline.show div#neatline-narrative [data-neatline-slug].hover, body.neatline.fullscreen div#neatline-narrative [data-neatline-slug].selected, body.neatline.fullscreen div#neatline-narrative [data-neatline-slug].hover {
-    background: #725641;
+    padding: 3px 3px 0px; }
+  body.neatline.show div#neatline-narrative .selected[data-neatline-slug], body.neatline.show div#neatline-narrative .hover[data-neatline-slug], body.neatline.fullscreen div#neatline-narrative .selected[data-neatline-slug], body.neatline.fullscreen div#neatline-narrative .hover[data-neatline-slug] {
+    background: #0a293d;
     color: white; }
 body.neatline.show #waypoints, body.neatline.fullscreen #waypoints {
-  color: #725641;
-  font-size: 18px;
+  color: #15415e;
+  font-size: 22px;
   background: none;
-  border-right: 2px solid #e1d1b7; }
+  border-right: 2px solid #030c11; }
   body.neatline.show #waypoints a.title, body.neatline.fullscreen #waypoints a.title {
     font-size: 18px;
+    color: #15415e;
     line-height: 1.4em;
-    background: rgba(255, 255, 255, 0.7);
-    border-bottom: 2px solid #ffcca1; }
+    background: cyan;
+    border-bottom: 2px solid #2a7f9e; }
     body.neatline.show #waypoints a.title strong, body.neatline.show #waypoints a.title em, body.neatline.show #waypoints a.title h1, body.neatline.show #waypoints a.title h2, body.neatline.show #waypoints a.title h3, body.neatline.show #waypoints a.title h4, body.neatline.show #waypoints a.title h5, body.neatline.show #waypoints a.title h6, body.neatline.show #waypoints a.title span, body.neatline.show #waypoints a.title div, body.neatline.show #waypoints a.title li, body.neatline.fullscreen #waypoints a.title strong, body.neatline.fullscreen #waypoints a.title em, body.neatline.fullscreen #waypoints a.title h1, body.neatline.fullscreen #waypoints a.title h2, body.neatline.fullscreen #waypoints a.title h3, body.neatline.fullscreen #waypoints a.title h4, body.neatline.fullscreen #waypoints a.title h5, body.neatline.fullscreen #waypoints a.title h6, body.neatline.fullscreen #waypoints a.title span, body.neatline.fullscreen #waypoints a.title div, body.neatline.fullscreen #waypoints a.title li {
       font-weight: normal;
       font-style: normal;
       font-size: 18px;
       line-height: 1.4em; }
   body.neatline.show #waypoints a.title:hover, body.neatline.show #waypoints a.title.selected, body.neatline.fullscreen #waypoints a.title:hover, body.neatline.fullscreen #waypoints a.title.selected {
-    background: #725641;
+    background: #0a293d;
     color: #ffffff; }
   body.neatline.show #waypoints a.title.highlighted, body.neatline.fullscreen #waypoints a.title.highlighted {
-    background: #ffcca1;
-    color: #725641; }
+    background: #186495;
+    color: #ffffff; }
 body.neatline.show #static-bubble div.body a.close, body.neatline.fullscreen #static-bubble div.body a.close {
   font-size: 2em;
   line-height: .8em; }
 body.neatline.show #static-bubble div.body a.close:hover, body.neatline.fullscreen #static-bubble div.body a.close:hover {
   background: none; }
 body.neatline.show #colophon, body.neatline.fullscreen #colophon {
-  border-top: 1px solid #d2ba93;
-  font-size: 12px; }
+  border-top: 1px solid #ffffff;
+  font-size: 16px; }
 body.neatline.show #static-bubble, body.neatline.fullscreen #static-bubble {
   display: block;
-  background: rgba(83, 65, 53, 0.9);
-  color: #f1e8dc;
+  background: rgba(28, 111, 141, 0.9);
+  color: #ffffff;
   border-radius: 14px;
   opacity: initial; }
   body.neatline.show #static-bubble .close, body.neatline.fullscreen #static-bubble .close {
-    background: #f0e8db;
-    color: #534135;
+    background: #15415e;
+    color: #ffffff;
     font-weight: bold;
     padding: 0 7px;
     border-radius: 5px;
@@ -115,22 +119,27 @@ body.neatline.show #static-bubble, body.neatline.fullscreen #static-bubble {
     line-height: 1em; }
   body.neatline.show #static-bubble .subItemTitle, body.neatline.fullscreen #static-bubble .subItemTitle {
     display: block;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 30px;
-    background: #534135;
+    background: rgba(21, 65, 94, 0.7);
     padding: 0 7px;
     margin-top: 1.2em; }
   body.neatline.show #static-bubble .subItem, body.neatline.fullscreen #static-bubble .subItem {
     display: block;
     margin-bottom: .5em;
     padding: 5px 7px 0;
-    word-wrap: break-word; }
+    word-wrap: break-word;
+    font-size: 18px; }
+  body.neatline.show #static-bubble .description, body.neatline.fullscreen #static-bubble .description {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 15px 0 0; }
   body.neatline.show #static-bubble .content.body p, body.neatline.fullscreen #static-bubble .content.body p {
     word-wrap: break-word;
-    font-size: 14px; }
+    font-size: 18px; }
     body.neatline.show #static-bubble .content.body p a, body.neatline.fullscreen #static-bubble .content.body p a {
-      color: #f0e8db;
-      font-size: 14px;
+      color: #00c5ff;
+      font-size: 18px;
       text-decoration: none; }
     body.neatline.show #static-bubble .content.body p a:hover, body.neatline.fullscreen #static-bubble .content.body p a:hover {
       text-decoration: underline; }
@@ -138,9 +147,9 @@ body.neatline.show #static-bubble, body.neatline.fullscreen #static-bubble {
 #neatline.Waypoints.Simile #simile, #neatline.Simile #simile {
   height: 120px; }
   #neatline.Waypoints.Simile #simile .timeline-band-inner, #neatline.Simile #simile .timeline-band-inner {
-    border: 2px solid #e1d1b7; }
+    border: 2px solid #2a7f9e; }
   #neatline.Waypoints.Simile #simile .timeline-band-layer, #neatline.Simile #simile .timeline-band-layer {
-    background: rgba(240, 232, 219, 0.1); }
+    background: rgba(0, 250, 255, 0.1); }
   #neatline.Waypoints.Simile #simile strong, #neatline.Waypoints.Simile #simile em, #neatline.Waypoints.Simile #simile h1, #neatline.Waypoints.Simile #simile h2, #neatline.Waypoints.Simile #simile h3, #neatline.Waypoints.Simile #simile h4, #neatline.Waypoints.Simile #simile h5, #neatline.Waypoints.Simile #simile h6, #neatline.Waypoints.Simile #simile span, #neatline.Waypoints.Simile #simile div, #neatline.Waypoints.Simile #simile li, #neatline.Simile #simile strong, #neatline.Simile #simile em, #neatline.Simile #simile h1, #neatline.Simile #simile h2, #neatline.Simile #simile h3, #neatline.Simile #simile h4, #neatline.Simile #simile h5, #neatline.Simile #simile h6, #neatline.Simile #simile span, #neatline.Simile #simile div, #neatline.Simile #simile li {
     font-weight: normal;
     font-style: normal;
