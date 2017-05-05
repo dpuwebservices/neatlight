@@ -9,7 +9,6 @@
 
 ?>
   <!-- Colophon -->
-  <?php echo common('colophon'); ?>
   
 <?php queue_css_file('style'); ?>
 <?php queue_js_file('show'); ?>
@@ -21,6 +20,7 @@
 
 <!-- Exhibit -->
 <div class="exhibit">
+  <?php echo common('colophon'); ?>  
   <?php echo nl_getExhibitMarkup(); ?>
 </div>
 
