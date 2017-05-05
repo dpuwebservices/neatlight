@@ -12,10 +12,6 @@
 <?php queue_css_file('style'); ?>
 <?php queue_js_file('show'); ?>
 
-<?php echo head(array(
-  'title' => nl_getExhibitField('title'),
-  'bodyclass' => 'neatline show'
-)); ?>
 
 <!-- Exhibit -->
 <div class="exhibit">
