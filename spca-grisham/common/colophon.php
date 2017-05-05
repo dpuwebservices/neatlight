@@ -11,6 +11,4 @@
 
 <div id="colophon">
   <?php echo get_theme_option('Footer Text'); ?>
-  <br><br><br>
-    <a href="../../admin">admin</a>
 </div>
