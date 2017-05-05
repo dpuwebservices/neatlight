@@ -8,7 +8,9 @@
  */
 
 ?>
-
+  <!-- Colophon -->
+  <?php echo common('colophon'); ?>
+  
 <?php queue_css_file('style'); ?>
 <?php queue_js_file('show'); ?>
 
