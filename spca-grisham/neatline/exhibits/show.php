@@ -20,7 +20,7 @@
 
 <!-- Exhibit -->
 <div class="exhibit">
-  <?php echo common('colophon'); ?>  
+  <?php echo nl_getExhibitField('narrative'); ?>
   <?php echo nl_getExhibitMarkup(); ?>
 </div>
 
