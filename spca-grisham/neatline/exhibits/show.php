@@ -20,7 +20,9 @@
 
 <!-- Exhibit -->
 <div class="exhibit">
-  <?php echo nl_getExhibitField('narrative'); ?>
+  <div class="grisham-narrative">
+    <?php echo nl_getExhibitField('narrative'); ?>
+  </div>
   <?php echo nl_getExhibitMarkup(); ?>
 </div>
 
