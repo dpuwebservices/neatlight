@@ -200,6 +200,7 @@ body.neatline.show, body.neatline.fullscreen{
         color: $green;
         font-size: $narFontSize;
         margin: 0 0 10px;
+        display: inline-block;
     }
     a {
         font-weight: bold;
