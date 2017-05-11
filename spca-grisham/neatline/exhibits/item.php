@@ -10,13 +10,17 @@
 
 <?php 
 $recordSummary="";
-$itemArr=array("Subject", "Creator", "Source", "Publisher", "Date", "Contributor", "Rights", "Relation", "Format", "Language", "Type", "Identifier", "Coverage");
+$itemArr=array("Creator", "Source", "Description"); 
+// Not using these fields "Subject", "Publisher", "Date", "Contributor", "Rights", "Relation", "Format", "Language", "Type", "Identifier", "Coverage"
 $itemBlock="";
 
 echo files_for_item(); //display images first
-if (metadata('item', array('Dublin Core','Description'))):
-  echo "<div class=\"description\">" . metadata('item', array('Dublin Core','Description')) . "</div>";
-endif; 
+
+//Don't treat description field differently--move to end
+//if (metadata('item', array('Dublin Core','Description'))):
+//  echo "<div class=\"description\">" . metadata('item', array('Dublin Core','Description')) . "</div>";
+//endif; 
+
 
 foreach ($itemArr as $i => $element){
 if (metadata('item', array('Dublin Core',$element))):
