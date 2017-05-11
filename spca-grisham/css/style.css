@@ -1,136 +1,174 @@
-@import url("https://fonts.googleapis.com/css?family=Prociono");
-/* line 21, ../sass/style.scss */
+@import url("https://fonts.googleapis.com/css?family=PT+Sans+Caption");
 * {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-}
+  -moz-box-sizing: border-box; }
 
-/* line 27, ../sass/style.scss */
+em {
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Sifonn Pro';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Sifonn Pro"), url("../fonts/SIFONN_PRO.woff") format("woff"); }
 body, html {
   margin: 0;
-  background: #f0e8db;
-  font-family: "Prociono", serif;
-}
+  background: #ffffff;
+  font-family: "PT Sans Caption", sans-serif; }
 
-/* line 32, ../sass/style.scss */
 a {
-  color: #725641;
-  font-size: 14px;
-}
+  color: #c1ad4c;
+  font-size: 14px; }
 
-/* line 37, ../sass/style.scss */
-h1 {
+h1, h2, h3, h4 {
+  font-family: "Sifonn Pro";
   line-height: 28px;
-  font-size: 24px;
-  color: #725641;
-}
+  font-size: 20px;
+  color: #687c7c; }
 
-/* line 43, ../sass/style.scss */
 p.title {
-  font-size: 24px;
-  color: #725641;
-}
+  font-size: 20px;
+  color: #687c7c; }
 
-/* line 50, ../sass/style.scss */
 body.neatline.browse div.container {
   margin: 3em auto;
-  width: 50%;
-}
-/* line 53, ../sass/style.scss */
-body.neatline.browse div.container div.exhibit {
-  margin: 5px 0;
-}
+  width: 50%; }
+  body.neatline.browse div.container div.exhibit {
+    margin: 5px 0; }
 
-/* line 63, ../sass/style.scss */
 body.neatline.show div.exhibit, body.neatline.fullscreen div.exhibit {
   float: left;
-  width: 1px;
-}
-/* line 66, ../sass/style.scss */
-body.neatline.show div.exhibit #neatline, body.neatline.show div.exhibit #neatline-map, body.neatline.fullscreen div.exhibit #neatline, body.neatline.fullscreen div.exhibit #neatline-map {
-  height: 100%;
-  width: 100%;
-}
-/* line 74, ../sass/style.scss */
+  width: 1px; }
+  body.neatline.show div.exhibit #neatline, body.neatline.fullscreen div.exhibit #neatline {
+    background: #8ba98f; }
+  body.neatline.show div.exhibit #neatline, body.neatline.show div.exhibit #neatline-map, body.neatline.fullscreen div.exhibit #neatline, body.neatline.fullscreen div.exhibit #neatline-map {
+    height: 100%;
+    width: 100%; }
 body.neatline.show #static-bubble div.body a.close, body.neatline.fullscreen #static-bubble div.body a.close {
   font-size: 2em;
-  line-height: .8em;
-}
-/* line 78, ../sass/style.scss */
+  line-height: .8em; }
 body.neatline.show #static-bubble div.body a.close:hover, body.neatline.fullscreen #static-bubble div.body a.close:hover {
-  background: none;
-}
-/* line 86, ../sass/style.scss */
+  background: none; }
 body.neatline.show #static-bubble, body.neatline.fullscreen #static-bubble {
   display: block;
-  background: rgba(83, 65, 53, 0.9);
-  color: #f1e8dc;
+  background: #ffffff;
+  color: #8ba98f;
   border-radius: 14px;
   opacity: initial;
-}
-/* line 94, ../sass/style.scss */
-body.neatline.show #static-bubble .close, body.neatline.fullscreen #static-bubble .close {
-  background: #f0e8db;
-  color: #534135;
-  font-weight: bold;
-  padding: 0 7px;
-  border-radius: 5px;
-  font-size: 22px;
-}
-/* line 102, ../sass/style.scss */
-body.neatline.show #static-bubble .title, body.neatline.fullscreen #static-bubble .title {
-  display: inline;
-  font-size: 2em;
-  line-height: 1em;
-}
-/* line 107, ../sass/style.scss */
-body.neatline.show #static-bubble .subItemTitle, body.neatline.fullscreen #static-bubble .subItemTitle {
-  display: block;
-  font-size: 16px;
-  line-height: 30px;
-  background: #534135;
-  padding: 0 7px;
-  margin-top: 1.2em;
-}
-/* line 115, ../sass/style.scss */
-body.neatline.show #static-bubble .subItem, body.neatline.fullscreen #static-bubble .subItem {
-  display: block;
-  margin-bottom: .5em;
-  padding: 5px 7px 0;
-  word-wrap: break-word;
-}
-/* line 121, ../sass/style.scss */
-body.neatline.show #static-bubble .content.body p, body.neatline.fullscreen #static-bubble .content.body p {
-  word-wrap: break-word;
-  font-size: 14px;
-}
-/* line 124, ../sass/style.scss */
-body.neatline.show #static-bubble .content.body p a, body.neatline.fullscreen #static-bubble .content.body p a {
-  color: #f0e8db;
-  font-size: 14px;
-  text-decoration: none;
-}
-/* line 129, ../sass/style.scss */
-body.neatline.show #static-bubble .content.body p a:hover, body.neatline.fullscreen #static-bubble .content.body p a:hover {
-  text-decoration: underline;
+  border: 10px solid #ffffff; }
+  body.neatline.show #static-bubble .close, body.neatline.fullscreen #static-bubble .close {
+    background: #c1ad4c;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 0 7px;
+    border-radius: 5px;
+    font-size: 22px;
+    -webkit-transition-duration: 0.5s;
+    /* Safari */
+    transition-duration: 0.5s; }
+  body.neatline.show #static-bubble .close:hover, body.neatline.fullscreen #static-bubble .close:hover {
+    background: #a29038;
+    color: #ffffff; }
+  body.neatline.show #static-bubble .title, body.neatline.fullscreen #static-bubble .title {
+    font-family: "Sifonn Pro";
+    display: inline;
+    font-size: 1.80em;
+    line-height: 1em;
+    color: #687c7c;
+    font-style: normal !important; }
+  body.neatline.show #static-bubble .subItemTitle, body.neatline.fullscreen #static-bubble .subItemTitle {
+    display: block;
+    font-size: 16px;
+    line-height: 30px;
+    background: #8ba98f;
+    color: #ffffff;
+    padding: 0 7px;
+    margin-top: 1.2em; }
+  body.neatline.show #static-bubble .subItem, body.neatline.fullscreen #static-bubble .subItem {
+    font-size: 14px;
+    display: block;
+    margin-bottom: .5em;
+    padding: 5px 7px 0;
+    word-wrap: break-word; }
+  body.neatline.show #static-bubble p, body.neatline.fullscreen #static-bubble p {
+    word-wrap: break-word;
+    font-size: 14px; }
+    body.neatline.show #static-bubble p a, body.neatline.fullscreen #static-bubble p a {
+      color: #c1ad4c;
+      font-size: 14px;
+      text-decoration: none; }
+    body.neatline.show #static-bubble p a:hover, body.neatline.fullscreen #static-bubble p a:hover {
+      text-decoration: underline; }
+
+#neatline.Waypoints.Simile #simile, #neatline.Simile #simile {
+  height: 120px; }
+  #neatline.Waypoints.Simile #simile .timeline-band-inner, #neatline.Simile #simile .timeline-band-inner {
+    border: 2px solid #516060; }
+  #neatline.Waypoints.Simile #simile .timeline-band-layer, #neatline.Simile #simile .timeline-band-layer {
+    background: rgba(104, 124, 124, 0.1); }
+  #neatline.Waypoints.Simile #simile strong, #neatline.Waypoints.Simile #simile em, #neatline.Waypoints.Simile #simile h1, #neatline.Waypoints.Simile #simile h2, #neatline.Waypoints.Simile #simile h3, #neatline.Waypoints.Simile #simile h4, #neatline.Waypoints.Simile #simile h5, #neatline.Waypoints.Simile #simile h6, #neatline.Waypoints.Simile #simile span, #neatline.Waypoints.Simile #simile div, #neatline.Waypoints.Simile #simile li, #neatline.Simile #simile strong, #neatline.Simile #simile em, #neatline.Simile #simile h1, #neatline.Simile #simile h2, #neatline.Simile #simile h3, #neatline.Simile #simile h4, #neatline.Simile #simile h5, #neatline.Simile #simile h6, #neatline.Simile #simile span, #neatline.Simile #simile div, #neatline.Simile #simile li {
+    font-weight: normal;
+    font-style: normal;
+    font-size: 12px; }
+
+.grisham-narrative {
+  margin: 20px 20%; }
+  .grisham-narrative h1, .grisham-narrative h2, .grisham-narrative h3, .grisham-narrative h4 {
+    font-size: 20px;
+    line-height: 28px;
+    text-transform: uppercase;
+    margin: 0 0 3px; }
+  .grisham-narrative .button {
+    background: #c1ad4c;
+    color: #ffffff;
+    padding: 4px 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    border-bottom: none;
+    -webkit-transition-duration: 0.5s;
+    /* Safari */
+    transition-duration: 0.5s; }
+  .grisham-narrative .button:hover {
+    background: #a29038;
+    color: #ffffff;
+    text-decoration: none; }
+  .grisham-narrative p {
+    color: #8ba98f;
+    font-size: 14px;
+    margin: 0 0 10px; }
+  .grisham-narrative a {
+    font-weight: bold;
+    font-size: 13px;
+    text-decoration: none;
+    border-bottom: 3px solid #c1ad4c; }
+  .grisham-narrative a:hover {
+    color: #a29038;
+    text-decoration: none;
+    border-bottom: none; }
+
+#OpenLayers_Control_PanZoom_2_zoomworld {
+  background: #222a23;
+  pointer-events: none;
+  cursor: default; }
+
+#OpenLayers_Control_PanZoom_2_zoomworld_innerImage {
+  display: none; }
+
+/* STYLES FOR NEATLINE
+
+.all{
+  stroke-width: 2;
+  stroke-color: #000;
+  stroke-color-select: #000;
+  stroke-opacity: 1.00;
+  stroke-opacity-select: 1.00;
+  fill-color: #000;
+  fill-color-select: #c1ad4c;
+  fill-opacity-select: 0.20;
+  fill-opacity: 0.20;
 }
 
-/* line 137, ../sass/style.scss */
-#neatline.Waypoints.Simile #simile, #neatline.Simile #simile {
-  height: 120px;
-}
-/* line 139, ../sass/style.scss */
-#neatline.Waypoints.Simile #simile .timeline-band-inner, #neatline.Simile #simile .timeline-band-inner {
-  border: 2px solid #e1d1b7;
-}
-/* line 142, ../sass/style.scss */
-#neatline.Waypoints.Simile #simile .timeline-band-layer, #neatline.Simile #simile .timeline-band-layer {
-  background: rgba(240, 232, 219, 0.1);
-}
-/* line 146, ../sass/style.scss */
-#neatline.Waypoints.Simile #simile strong, #neatline.Waypoints.Simile #simile em, #neatline.Waypoints.Simile #simile h1, #neatline.Waypoints.Simile #simile h2, #neatline.Waypoints.Simile #simile h3, #neatline.Waypoints.Simile #simile h4, #neatline.Waypoints.Simile #simile h5, #neatline.Waypoints.Simile #simile h6, #neatline.Waypoints.Simile #simile span, #neatline.Waypoints.Simile #simile div, #neatline.Waypoints.Simile #simile li, #neatline.Simile #simile strong, #neatline.Simile #simile em, #neatline.Simile #simile h1, #neatline.Simile #simile h2, #neatline.Simile #simile h3, #neatline.Simile #simile h4, #neatline.Simile #simile h5, #neatline.Simile #simile h6, #neatline.Simile #simile span, #neatline.Simile #simile div, #neatline.Simile #simile li {
-  font-weight: normal;
-  font-style: normal;
-  font-size: 12px;
-}
+*/
+
+/*# sourceMappingURL=style.css.map */

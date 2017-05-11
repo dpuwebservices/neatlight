@@ -1,20 +1,18 @@
-@import url("https://fonts.googleapis.com/css?family=Prociono");
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Caption');
 
-$font: 'Prociono', serif;
-$titleFontSize: 24px;
+$font: 'PT Sans Caption', sans-serif;
+$titleFontSize: 20px;
 $titleFontLineHeight: 28px;
+$headerFont: 'Sifonn Pro';
 
-$narTan: rgb(240,232,219);
-$narTanHighlight: rgb(217,191,157);
-$narLinkHighlight: rgb(255,204,161);
-$darkBrown: rgb(83, 65, 53);
-$narBrown: rgb(114,86,65);
-$narWhite: #ffffff;
+$yellow: rgb(193,173,76);
+$green: rgb(139,169,143);
+$gray: rgb(104,124,124);
+$white: #ffffff;
 $narFontSize: 14px;
 $narFontLineHeight: 20px;
 
-$bubbleBrown: rgba(83, 65, 53, 0.9);
-$bubbleTan: #f1e8dc;
+$bubbleGreen: rgba(139, 169, 143, 0.9);
 $wordBreak: break-word;
 
 
@@ -23,26 +21,37 @@ $wordBreak: break-word;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
 }
+em {
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sifonn Pro';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Sifonn Pro'), url('../fonts/SIFONN_PRO.woff') format('woff');
+}
 
 body, html{
   margin: 0; 
-  background: $narTan;
+  background: $white;
   font-family: $font;
 }
 a {
-    color: $narBrown;
+    color: $yellow;
     font-size: $narFontSize;
 }
 
-h1 {
+h1, h2, h3, h4 {
+    font-family: $headerFont;
     line-height: $titleFontLineHeight;
     font-size: $titleFontSize;
-    color: $narBrown;
+    color: $gray;
 }
 
 p.title {
     font-size: $titleFontSize;
-    color: $narBrown;
+    color: $gray;
 }
 
   body.neatline.browse {
@@ -53,8 +62,6 @@ p.title {
       div.exhibit {
           margin: 5px 0;
       }
-      p.title {
-      }      
     }
   }  
 
@@ -63,6 +70,9 @@ body.neatline.show, body.neatline.fullscreen{
   div.exhibit {
       float: left;
       width: 1px;
+      #neatline {
+          background: $green;
+      }
     #neatline, #neatline-map {
         height: 100%;
         width: 100%;
@@ -85,44 +95,56 @@ body.neatline.show, body.neatline.fullscreen{
   
   #static-bubble{
     display:block;
-    background: $bubbleBrown;
-    color: $bubbleTan;
+    background: $white;
+    color: $green;
     border-radius:14px;
     $fontSize: 14px;
     opacity: initial;
+    border: 10px solid $white;
     
     .close{
-      background: $narTan;
-      color: $darkBrown;
+      background: $yellow;
+      color: $white;
       font-weight: bold;
       padding: 0 7px;
       border-radius: 5px;
       font-size: 22px;
+      -webkit-transition-duration: 0.5s; /* Safari */
+      transition-duration: 0.5s;
     }
+    .close:hover {
+        background: darken($yellow, 10%);
+        color: $white;
+      }
     .title{
+      font-family: $headerFont;
       display:inline;
-      font-size: 2em;
+      font-size: 1.80em;
       line-height: 1em;
+      color: $gray;
+      font-style: normal !important;
     }
     .subItemTitle{
       display:block;
       font-size: $fontSize + 2px;
       line-height: 30px;
-      background: $darkBrown;
+      background: $green;
+      color: $white;
       padding: 0 7px;
       margin-top: 1.2em;
     }
     .subItem{
+      font-size: $narFontSize;
       display:block;
       margin-bottom: .5em;  
       padding: 5px 7px 0;
       word-wrap: $wordBreak;
     }
-    .content.body p {
+    p {
       word-wrap: $wordBreak;
       font-size: $narFontSize;
       a {
-        color: $narTan;
+        color: $yellow;
         font-size: $narFontSize;
         text-decoration: none;
       }
@@ -137,10 +159,10 @@ body.neatline.show, body.neatline.fullscreen{
 #neatline.Waypoints.Simile #simile, #neatline.Simile #simile {
   height: 120px;
   .timeline-band-inner{
-    border: 2px solid darken($narTan, 10%);
+    border: 2px solid darken($gray, 10%);
   }
   .timeline-band-layer {
-    background: rgba($narTan, .1);
+    background: rgba($gray, .1);
   }
   //remove formatting 
   strong, em, h1, h2, h3, h4, h5, h6, span, div, li{
@@ -150,6 +172,70 @@ body.neatline.show, body.neatline.fullscreen{
   }
 }
 
+.grisham-narrative {
+    margin: 20px 20%;
 
+    h1, h2, h3, h4 {
+        font-size: $titleFontSize;
+        line-height: $titleFontLineHeight;
+        text-transform: uppercase;
+        margin: 0 0 3px;
+    }
+    .button{
+        background: $yellow;
+        color: $white;
+        padding: 4px 18px;
+        border-radius: 5px;
+        text-decoration: none;
+        border-bottom: none;
+        -webkit-transition-duration: 0.5s; /* Safari */
+        transition-duration: 0.5s;
+    }
+    .button:hover{
+        background: darken($yellow, 10%);
+        color: $white;
+        text-decoration: none;
+    }
+    p {
+        color: $green;
+        font-size: $narFontSize;
+        margin: 0 0 10px;
+    }
+    a {
+        font-weight: bold;
+        font-size: $narFontSize - 1px;
+        text-decoration: none;
+        border-bottom: 3px solid #c1ad4c;
+    }
+    a:hover {
+        color: darken($yellow, 10%);
+        text-decoration: none;
+        border-bottom: none;
+    }
+}
 
+#OpenLayers_Control_PanZoom_2_zoomworld {
+    background: #222a23;
+    pointer-events: none;
+    cursor: default;
+}
+#OpenLayers_Control_PanZoom_2_zoomworld_innerImage {
+    display:none;
+}
+
+/* STYLES FOR NEATLINE
+
+.all{
+  stroke-width: 2;
+  stroke-color: #000;
+  stroke-color-select: #000;
+  stroke-opacity: 1.00;
+  stroke-opacity-select: 1.00;
+  fill-color: #000;
+  fill-color-select: #c1ad4c;
+  fill-opacity-select: 0.20;
+  fill-opacity: 0.20;
+}
+
+*/
 
