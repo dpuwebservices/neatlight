@@ -173,8 +173,9 @@ body.neatline.show, body.neatline.fullscreen{
 }
 
 .grisham-narrative {
-    margin: 20px 20%;
-
+    margin: 10px 50px;
+    scroll: auto;
+    
     h1, h2, h3, h4 {
         font-size: $titleFontSize;
         line-height: $titleFontLineHeight;
