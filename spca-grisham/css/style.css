@@ -240,6 +240,7 @@ body.neatline.show #static-bubble p a:hover, body.neatline.fullscreen #static-bu
   fill-color-select: #c1ad4c;
   fill-opacity-select: 0.20;
   fill-opacity: 0.20;
+  map-focus: (parameters from placement of map)
 }
 
 */
