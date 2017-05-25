@@ -66,7 +66,8 @@ p.title {
 body.neatline.show, body.neatline.fullscreen{
   div.exhibit {
       float: left;
-      width: 1px;
+      width: 80%;
+//      width: 1px;
     #neatline, #neatline-map {
         height: 100%;
         width: 100%;
@@ -87,7 +88,8 @@ body.neatline.show, body.neatline.fullscreen{
     float: right;
     overflow-y: scroll;
     padding: 2em;
-    width: 480px;
+    width: 20%;
+    float:right;
     a.back {
         display: inline-block;
         padding: 5px 8px;

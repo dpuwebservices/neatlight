@@ -1,39 +1,58 @@
 @import url("https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz");
+/* line 25, ../sass/style.scss */
 * {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box; }
+  -moz-box-sizing: border-box;
+}
 
+/* line 31, ../sass/style.scss */
 body, html {
   margin: 0;
   background: #0a293d;
   color: #ffffff;
-  font-family: "Yanone Kaffeesatz", sans-serif; }
+  font-family: "Yanone Kaffeesatz", sans-serif;
+}
 
+/* line 37, ../sass/style.scss */
 a {
   color: #00c5ff;
-  font-size: 18px; }
+  font-size: 18px;
+}
 
+/* line 42, ../sass/style.scss */
 h1 {
   line-height: 28px;
   font-size: 28px;
-  font-weight: 500; }
+  font-weight: 500;
+}
 
+/* line 48, ../sass/style.scss */
 p.title {
-  font-size: 28px; }
+  font-size: 28px;
+}
 
+/* line 54, ../sass/style.scss */
 body.neatline.browse div.container {
   margin: 3em auto;
-  width: 50%; }
-  body.neatline.browse div.container div.exhibit {
-    margin: 5px 0; }
+  width: 50%;
+}
+/* line 57, ../sass/style.scss */
+body.neatline.browse div.container div.exhibit {
+  margin: 5px 0;
+}
 
+/* line 67, ../sass/style.scss */
 body.neatline.show div.exhibit, body.neatline.fullscreen div.exhibit {
   float: left;
-  width: 1px; }
-  body.neatline.show div.exhibit #neatline, body.neatline.show div.exhibit #neatline-map, body.neatline.fullscreen div.exhibit #neatline, body.neatline.fullscreen div.exhibit #neatline-map {
-    height: 100%;
-    width: 100%; }
+  width: 80%;
+}
+/* line 71, ../sass/style.scss */
+body.neatline.show div.exhibit #neatline, body.neatline.show div.exhibit #neatline-map, body.neatline.fullscreen div.exhibit #neatline, body.neatline.fullscreen div.exhibit #neatline-map {
+  height: 100%;
+  width: 100%;
+}
+/* line 78, ../sass/style.scss */
 body.neatline.show div#neatline-narrative, body.neatline.fullscreen div#neatline-narrative {
   background: #15415e;
   color: #ffffff;
@@ -42,117 +61,177 @@ body.neatline.show div#neatline-narrative, body.neatline.fullscreen div#neatline
   float: right;
   overflow-y: scroll;
   padding: 2em;
-  width: 480px; }
-  body.neatline.show div#neatline-narrative a, body.neatline.fullscreen div#neatline-narrative a {
-    color: #00c5ff;
-    text-decoration: underline; }
-  body.neatline.show div#neatline-narrative a:hover, body.neatline.fullscreen div#neatline-narrative a:hover {
-    color: #2a7f9e; }
-  body.neatline.show div#neatline-narrative a.back, body.neatline.fullscreen div#neatline-narrative a.back {
-    display: inline-block;
-    padding: 5px 8px;
-    margin-bottom: 1em;
-    font-size: 16px; }
-    body.neatline.show div#neatline-narrative a.back .arrow, body.neatline.fullscreen div#neatline-narrative a.back .arrow {
-      font-size: 18px; }
-  body.neatline.show div#neatline-narrative h1.title, body.neatline.fullscreen div#neatline-narrative h1.title {
-    font-size: 40px;
-    line-height: 38px;
-    margin-bottom: 1.0em; }
-  body.neatline.show div#neatline-narrative div#neatline-narrative a:hover, body.neatline.fullscreen div#neatline-narrative div#neatline-narrative a:hover {
-    font-color: #2a7f9e; }
-  body.neatline.show div#neatline-narrative p, body.neatline.fullscreen div#neatline-narrative p {
-    color: rgba(255, 255, 255, 0.9); }
-  body.neatline.show div#neatline-narrative [data-neatline-slug], body.neatline.show div#neatline-narrative [data-neatline-slug].selected, body.neatline.show div#neatline-narrative [data-neatline-slug].hover, body.neatline.fullscreen div#neatline-narrative [data-neatline-slug], body.neatline.fullscreen div#neatline-narrative [data-neatline-slug].selected, body.neatline.fullscreen div#neatline-narrative [data-neatline-slug].hover {
-    background: rgba(28, 111, 141, 0.9);
-    cursor: pointer;
-    padding: 3px 3px 0px; }
-  body.neatline.show div#neatline-narrative .selected[data-neatline-slug], body.neatline.show div#neatline-narrative .hover[data-neatline-slug], body.neatline.fullscreen div#neatline-narrative .selected[data-neatline-slug], body.neatline.fullscreen div#neatline-narrative .hover[data-neatline-slug] {
-    background: #0a293d;
-    color: white; }
+  width: 20%;
+  float: right;
+}
+/* line 79, ../sass/style.scss */
+body.neatline.show div#neatline-narrative a, body.neatline.fullscreen div#neatline-narrative a {
+  color: #00c5ff;
+  text-decoration: underline;
+}
+/* line 83, ../sass/style.scss */
+body.neatline.show div#neatline-narrative a:hover, body.neatline.fullscreen div#neatline-narrative a:hover {
+  color: #2a7f9e;
+}
+/* line 93, ../sass/style.scss */
+body.neatline.show div#neatline-narrative a.back, body.neatline.fullscreen div#neatline-narrative a.back {
+  display: inline-block;
+  padding: 5px 8px;
+  margin-bottom: 1em;
+  font-size: 16px;
+}
+/* line 98, ../sass/style.scss */
+body.neatline.show div#neatline-narrative a.back .arrow, body.neatline.fullscreen div#neatline-narrative a.back .arrow {
+  font-size: 18px;
+}
+/* line 102, ../sass/style.scss */
+body.neatline.show div#neatline-narrative h1.title, body.neatline.fullscreen div#neatline-narrative h1.title {
+  font-size: 40px;
+  line-height: 38px;
+  margin-bottom: 1.0em;
+}
+/* line 107, ../sass/style.scss */
+body.neatline.show div#neatline-narrative div#neatline-narrative a:hover, body.neatline.fullscreen div#neatline-narrative div#neatline-narrative a:hover {
+  font-color: #2a7f9e;
+}
+/* line 110, ../sass/style.scss */
+body.neatline.show div#neatline-narrative p, body.neatline.fullscreen div#neatline-narrative p {
+  color: rgba(255, 255, 255, 0.9);
+}
+/* line 113, ../sass/style.scss */
+body.neatline.show div#neatline-narrative [data-neatline-slug], body.neatline.show div#neatline-narrative [data-neatline-slug].selected, body.neatline.show div#neatline-narrative [data-neatline-slug].hover, body.neatline.fullscreen div#neatline-narrative [data-neatline-slug], body.neatline.fullscreen div#neatline-narrative [data-neatline-slug].selected, body.neatline.fullscreen div#neatline-narrative [data-neatline-slug].hover {
+  background: rgba(28, 111, 141, 0.9);
+  cursor: pointer;
+  padding: 3px 3px 0px;
+}
+/* line 118, ../sass/style.scss */
+body.neatline.show div#neatline-narrative .selected[data-neatline-slug], body.neatline.show div#neatline-narrative .hover[data-neatline-slug], body.neatline.fullscreen div#neatline-narrative .selected[data-neatline-slug], body.neatline.fullscreen div#neatline-narrative .hover[data-neatline-slug] {
+  background: #0a293d;
+  color: white;
+}
+/* line 126, ../sass/style.scss */
 body.neatline.show #waypoints, body.neatline.fullscreen #waypoints {
   color: #15415e;
   font-size: 22px;
   background: none;
-  border-right: 2px solid #030c11; }
-  body.neatline.show #waypoints a.title, body.neatline.fullscreen #waypoints a.title {
-    font-size: 18px;
-    color: #15415e;
-    line-height: 1.4em;
-    background: cyan;
-    border-bottom: 2px solid #2a7f9e; }
-    body.neatline.show #waypoints a.title strong, body.neatline.show #waypoints a.title em, body.neatline.show #waypoints a.title h1, body.neatline.show #waypoints a.title h2, body.neatline.show #waypoints a.title h3, body.neatline.show #waypoints a.title h4, body.neatline.show #waypoints a.title h5, body.neatline.show #waypoints a.title h6, body.neatline.show #waypoints a.title span, body.neatline.show #waypoints a.title div, body.neatline.show #waypoints a.title li, body.neatline.fullscreen #waypoints a.title strong, body.neatline.fullscreen #waypoints a.title em, body.neatline.fullscreen #waypoints a.title h1, body.neatline.fullscreen #waypoints a.title h2, body.neatline.fullscreen #waypoints a.title h3, body.neatline.fullscreen #waypoints a.title h4, body.neatline.fullscreen #waypoints a.title h5, body.neatline.fullscreen #waypoints a.title h6, body.neatline.fullscreen #waypoints a.title span, body.neatline.fullscreen #waypoints a.title div, body.neatline.fullscreen #waypoints a.title li {
-      font-weight: normal;
-      font-style: normal;
-      font-size: 18px;
-      line-height: 1.4em; }
-  body.neatline.show #waypoints a.title:hover, body.neatline.show #waypoints a.title.selected, body.neatline.fullscreen #waypoints a.title:hover, body.neatline.fullscreen #waypoints a.title.selected {
-    background: #0a293d;
-    color: #ffffff; }
-  body.neatline.show #waypoints a.title.highlighted, body.neatline.fullscreen #waypoints a.title.highlighted {
-    background: #186495;
-    color: #ffffff; }
+  border-right: 2px solid #030c11;
+}
+/* line 131, ../sass/style.scss */
+body.neatline.show #waypoints a.title, body.neatline.fullscreen #waypoints a.title {
+  font-size: 18px;
+  color: #15415e;
+  line-height: 1.4em;
+  background: cyan;
+  border-bottom: 2px solid #2a7f9e;
+}
+/* line 132, ../sass/style.scss */
+body.neatline.show #waypoints a.title strong, body.neatline.show #waypoints a.title em, body.neatline.show #waypoints a.title h1, body.neatline.show #waypoints a.title h2, body.neatline.show #waypoints a.title h3, body.neatline.show #waypoints a.title h4, body.neatline.show #waypoints a.title h5, body.neatline.show #waypoints a.title h6, body.neatline.show #waypoints a.title span, body.neatline.show #waypoints a.title div, body.neatline.show #waypoints a.title li, body.neatline.fullscreen #waypoints a.title strong, body.neatline.fullscreen #waypoints a.title em, body.neatline.fullscreen #waypoints a.title h1, body.neatline.fullscreen #waypoints a.title h2, body.neatline.fullscreen #waypoints a.title h3, body.neatline.fullscreen #waypoints a.title h4, body.neatline.fullscreen #waypoints a.title h5, body.neatline.fullscreen #waypoints a.title h6, body.neatline.fullscreen #waypoints a.title span, body.neatline.fullscreen #waypoints a.title div, body.neatline.fullscreen #waypoints a.title li {
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.4em;
+}
+/* line 144, ../sass/style.scss */
+body.neatline.show #waypoints a.title:hover, body.neatline.show #waypoints a.title.selected, body.neatline.fullscreen #waypoints a.title:hover, body.neatline.fullscreen #waypoints a.title.selected {
+  background: #0a293d;
+  color: #ffffff;
+}
+/* line 145, ../sass/style.scss */
+body.neatline.show #waypoints a.title.highlighted, body.neatline.fullscreen #waypoints a.title.highlighted {
+  background: #186495;
+  color: #ffffff;
+}
+/* line 149, ../sass/style.scss */
 body.neatline.show #static-bubble div.body a.close, body.neatline.fullscreen #static-bubble div.body a.close {
   font-size: 2em;
-  line-height: .8em; }
+  line-height: .8em;
+}
+/* line 153, ../sass/style.scss */
 body.neatline.show #static-bubble div.body a.close:hover, body.neatline.fullscreen #static-bubble div.body a.close:hover {
-  background: none; }
+  background: none;
+}
+/* line 157, ../sass/style.scss */
 body.neatline.show #colophon, body.neatline.fullscreen #colophon {
   border-top: 1px solid #ffffff;
-  font-size: 16px; }
+  font-size: 16px;
+}
+/* line 162, ../sass/style.scss */
 body.neatline.show #static-bubble, body.neatline.fullscreen #static-bubble {
   display: block;
   background: rgba(28, 111, 141, 0.9);
   color: #ffffff;
   border-radius: 14px;
-  opacity: initial; }
-  body.neatline.show #static-bubble .close, body.neatline.fullscreen #static-bubble .close {
-    background: #15415e;
-    color: #ffffff;
-    font-weight: bold;
-    padding: 0 7px;
-    border-radius: 5px;
-    font-size: 22px; }
-  body.neatline.show #static-bubble .title, body.neatline.fullscreen #static-bubble .title {
-    display: inline;
-    font-size: 2em;
-    line-height: 1em; }
-  body.neatline.show #static-bubble .subItemTitle, body.neatline.fullscreen #static-bubble .subItemTitle {
-    display: block;
-    font-size: 18px;
-    line-height: 30px;
-    background: rgba(21, 65, 94, 0.7);
-    padding: 0 7px;
-    margin-top: 1.2em; }
-  body.neatline.show #static-bubble .subItem, body.neatline.fullscreen #static-bubble .subItem {
-    display: block;
-    margin-bottom: .5em;
-    padding: 5px 7px 0;
-    word-wrap: break-word;
-    font-size: 18px; }
-  body.neatline.show #static-bubble .description, body.neatline.fullscreen #static-bubble .description {
-    font-size: 18px;
-    line-height: 24px;
-    padding: 15px 0 0; }
-  body.neatline.show #static-bubble .content.body p, body.neatline.fullscreen #static-bubble .content.body p {
-    word-wrap: break-word;
-    font-size: 18px; }
-    body.neatline.show #static-bubble .content.body p a, body.neatline.fullscreen #static-bubble .content.body p a {
-      color: #00c5ff;
-      font-size: 18px;
-      text-decoration: none; }
-    body.neatline.show #static-bubble .content.body p a:hover, body.neatline.fullscreen #static-bubble .content.body p a:hover {
-      text-decoration: underline; }
+  opacity: initial;
+}
+/* line 170, ../sass/style.scss */
+body.neatline.show #static-bubble .close, body.neatline.fullscreen #static-bubble .close {
+  background: #15415e;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 0 7px;
+  border-radius: 5px;
+  font-size: 22px;
+}
+/* line 178, ../sass/style.scss */
+body.neatline.show #static-bubble .title, body.neatline.fullscreen #static-bubble .title {
+  display: inline;
+  font-size: 2em;
+  line-height: 1em;
+}
+/* line 183, ../sass/style.scss */
+body.neatline.show #static-bubble .subItemTitle, body.neatline.fullscreen #static-bubble .subItemTitle {
+  display: block;
+  font-size: 18px;
+  line-height: 30px;
+  background: rgba(21, 65, 94, 0.7);
+  padding: 0 7px;
+  margin-top: 1.2em;
+}
+/* line 191, ../sass/style.scss */
+body.neatline.show #static-bubble .subItem, body.neatline.fullscreen #static-bubble .subItem {
+  display: block;
+  margin-bottom: .5em;
+  padding: 5px 7px 0;
+  word-wrap: break-word;
+  font-size: 18px;
+}
+/* line 198, ../sass/style.scss */
+body.neatline.show #static-bubble .description, body.neatline.fullscreen #static-bubble .description {
+  font-size: 18px;
+  line-height: 24px;
+  padding: 15px 0 0;
+}
+/* line 203, ../sass/style.scss */
+body.neatline.show #static-bubble .content.body p, body.neatline.fullscreen #static-bubble .content.body p {
+  word-wrap: break-word;
+  font-size: 18px;
+}
+/* line 206, ../sass/style.scss */
+body.neatline.show #static-bubble .content.body p a, body.neatline.fullscreen #static-bubble .content.body p a {
+  color: #00c5ff;
+  font-size: 18px;
+  text-decoration: none;
+}
+/* line 211, ../sass/style.scss */
+body.neatline.show #static-bubble .content.body p a:hover, body.neatline.fullscreen #static-bubble .content.body p a:hover {
+  text-decoration: underline;
+}
 
+/* line 219, ../sass/style.scss */
 #neatline.Waypoints.Simile #simile, #neatline.Simile #simile {
-  height: 120px; }
-  #neatline.Waypoints.Simile #simile .timeline-band-inner, #neatline.Simile #simile .timeline-band-inner {
-    border: 2px solid #2a7f9e; }
-  #neatline.Waypoints.Simile #simile .timeline-band-layer, #neatline.Simile #simile .timeline-band-layer {
-    background: rgba(0, 250, 255, 0.1); }
-  #neatline.Waypoints.Simile #simile strong, #neatline.Waypoints.Simile #simile em, #neatline.Waypoints.Simile #simile h1, #neatline.Waypoints.Simile #simile h2, #neatline.Waypoints.Simile #simile h3, #neatline.Waypoints.Simile #simile h4, #neatline.Waypoints.Simile #simile h5, #neatline.Waypoints.Simile #simile h6, #neatline.Waypoints.Simile #simile span, #neatline.Waypoints.Simile #simile div, #neatline.Waypoints.Simile #simile li, #neatline.Simile #simile strong, #neatline.Simile #simile em, #neatline.Simile #simile h1, #neatline.Simile #simile h2, #neatline.Simile #simile h3, #neatline.Simile #simile h4, #neatline.Simile #simile h5, #neatline.Simile #simile h6, #neatline.Simile #simile span, #neatline.Simile #simile div, #neatline.Simile #simile li {
-    font-weight: normal;
-    font-style: normal;
-    font-size: 12px; }
-
-/*# sourceMappingURL=style.css.map */
+  height: 120px;
+}
+/* line 221, ../sass/style.scss */
+#neatline.Waypoints.Simile #simile .timeline-band-inner, #neatline.Simile #simile .timeline-band-inner {
+  border: 2px solid #2a7f9e;
+}
+/* line 224, ../sass/style.scss */
+#neatline.Waypoints.Simile #simile .timeline-band-layer, #neatline.Simile #simile .timeline-band-layer {
+  background: rgba(0, 250, 255, 0.1);
+}
+/* line 228, ../sass/style.scss */
+#neatline.Waypoints.Simile #simile strong, #neatline.Waypoints.Simile #simile em, #neatline.Waypoints.Simile #simile h1, #neatline.Waypoints.Simile #simile h2, #neatline.Waypoints.Simile #simile h3, #neatline.Waypoints.Simile #simile h4, #neatline.Waypoints.Simile #simile h5, #neatline.Waypoints.Simile #simile h6, #neatline.Waypoints.Simile #simile span, #neatline.Waypoints.Simile #simile div, #neatline.Waypoints.Simile #simile li, #neatline.Simile #simile strong, #neatline.Simile #simile em, #neatline.Simile #simile h1, #neatline.Simile #simile h2, #neatline.Simile #simile h3, #neatline.Simile #simile h4, #neatline.Simile #simile h5, #neatline.Simile #simile h6, #neatline.Simile #simile span, #neatline.Simile #simile div, #neatline.Simile #simile li {
+  font-weight: normal;
+  font-style: normal;
+  font-size: 12px;
+}
