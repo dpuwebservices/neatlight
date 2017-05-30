@@ -62,7 +62,7 @@ body.neatline.show,
 body.neatline.fullscreen {
     div.exhibit {
         float: left;
-        width: 80% !important;
+        width: 80% !important; // !important not generally advisable -CM
         #neatline,
         #neatline-map {
             height: 100%;
@@ -124,7 +124,7 @@ body.neatline.fullscreen {
         font-size: $narFontSize + 4px;
         background: none;
         border-right: 2px solid darken($narBlue, 10%);
-        max-height: calc(100% - 120px) !important;
+        max-height: calc(100% - 120px) !important; // !important not generally advisable -CM
         a.title {
             strong,
             em,
