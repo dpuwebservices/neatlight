@@ -52,9 +52,7 @@ p.title {
         width: 50%;
       div.exhibit {
           margin: 5px 0;
-      }
-      p.title {
-      }      
+      }   
     }
   }  
 
@@ -62,7 +60,7 @@ p.title {
 body.neatline.show, body.neatline.fullscreen{
   div.exhibit {
       float: left;
-      width: 1px;
+      width: 80% !important; // override style created by neatline plugin
     #neatline, #neatline-map {
         height: 100%;
         width: 100%;
@@ -82,8 +80,8 @@ body.neatline.show, body.neatline.fullscreen{
     line-height: $narFontLineHeight;
     float: right;
     overflow-y: scroll;
-    padding: 2em;
-    width: 480px;
+    padding: 2%;
+    width: 20%;
     a.back {
         display: inline-block;
         padding: 5px 8px;
@@ -118,6 +116,7 @@ body.neatline.show, body.neatline.fullscreen{
     font-size: $narFontSize + 4px;
     background: none;
     border-right: 2px solid darken($narTan, 10%);
+    max-height: calc(100% - 120px) !important; // override style created by neatline plugin
     a.title{
       strong, em, h1, h2, h3, h4, h5, h6, span, div, li{
        font-weight:normal;
@@ -127,6 +126,7 @@ body.neatline.show, body.neatline.fullscreen{
       }
       font-size: 18px;
       line-height: 1.4em;
+      padding: .3em .8em;
       background: rgba(lighten($narTan, 10%), .7);
       border-bottom:2px solid $narLinkHighlight;
     }
@@ -155,6 +155,7 @@ body.neatline.show, body.neatline.fullscreen{
     border-radius:14px;
     $fontSize: 14px;
     opacity: initial;
+    max-height: calc(100% - 160px);
     
     .close{
       background: $narTan;
@@ -199,8 +200,33 @@ body.neatline.show, body.neatline.fullscreen{
   }
 }
 
+// custom scrollbar
+#neatline .widget::-webkit-scrollbar-track,
+#static-bubble::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0, 0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+#neatline .widget::-webkit-scrollbar,
+#static-bubble::-webkit-scrollbar {
+    width: 14px;
+    background-color: #F5F5F5;
+}
+
+#neatline .widget::-webkit-scrollbar-thumb,
+#static-bubble::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: $darkBrown;
+    border:1px solid #F5F5F5;
+}
+
 #neatline.Waypoints.Simile #simile, #neatline.Simile #simile {
   height: 120px;
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
   .timeline-band-inner{
     border: 2px solid darken($narTan, 10%);
   }
