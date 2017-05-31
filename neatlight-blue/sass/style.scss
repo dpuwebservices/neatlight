@@ -12,7 +12,6 @@ $narFontSize: 18px;
 $narFontLineHeight: 24px;
 $linkBlue: rgb(0,197,255);
 $bubbleBlue: rgba(28,111,141,0.9);
-$bubbleTan: #f1e8dc;
 $wordBreak: break-word;
 $lightBlue: rgb(0,255,255);
 $timelineBlue: rgba(0,250,255,0.1);
@@ -178,6 +177,7 @@ body.neatline.fullscreen {
         border-radius: 14px;
         $fontSize: 14px;
         opacity: initial;
+        max-height: calc(100% - 160px);
         .close {
             background: $narDarkBlue;
             color: $narWhite;
@@ -227,27 +227,36 @@ body.neatline.fullscreen {
 }
 
 // custom scrollbar
-#neatline .widget::-webkit-scrollbar-track {
+#neatline .widget::-webkit-scrollbar-track,
+#static-bubble::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0, 0.3);
     border-radius: 10px;
     background-color: #F5F5F5;
 }
 
-#neatline .widget::-webkit-scrollbar {
-    width: 12px;
+#neatline .widget::-webkit-scrollbar,
+#static-bubble::-webkit-scrollbar {
+    width: 14px;
     background-color: #F5F5F5;
 }
 
-#neatline .widget::-webkit-scrollbar-thumb {
+#neatline .widget::-webkit-scrollbar-thumb,
+#static-bubble::-webkit-scrollbar-thumb {
     border-radius: 10px;
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0, .3);
     background-color: $narBlueHighlight;
+}
+#static-bubble::-webkit-scrollbar-thumb {
+    background-color: lighten($narDarkBlue, 8%);
 }
 
 #neatline.Waypoints.Simile #simile,
 #neatline.Simile #simile {
     height: 120px;
     width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
     .timeline-band-inner {
         border: 2px solid $narBlueHighlight;
     }

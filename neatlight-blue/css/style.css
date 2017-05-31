@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz");
-/* line 20, ../sass/style.scss */
+/* line 19, ../sass/style.scss */
 * {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
 
-/* line 26, ../sass/style.scss */
+/* line 25, ../sass/style.scss */
 body,
 html {
   margin: 0;
@@ -15,41 +15,41 @@ html {
   font-family: "Yanone Kaffeesatz", sans-serif;
 }
 
-/* line 34, ../sass/style.scss */
+/* line 33, ../sass/style.scss */
 a {
   color: #00c5ff;
   font-size: 18px;
 }
 
-/* line 39, ../sass/style.scss */
+/* line 38, ../sass/style.scss */
 h1 {
   line-height: 28px;
   font-size: 28px;
   font-weight: 500;
 }
 
-/* line 45, ../sass/style.scss */
+/* line 44, ../sass/style.scss */
 p.title {
   font-size: 28px;
 }
 
-/* line 50, ../sass/style.scss */
+/* line 49, ../sass/style.scss */
 body.neatline.browse div.container {
   margin: 3em auto;
   width: 50%;
 }
-/* line 53, ../sass/style.scss */
+/* line 52, ../sass/style.scss */
 body.neatline.browse div.container div.exhibit {
   margin: 5px 0;
 }
 
-/* line 62, ../sass/style.scss */
+/* line 61, ../sass/style.scss */
 body.neatline.show div.exhibit,
 body.neatline.fullscreen div.exhibit {
   float: left;
   width: 80% !important;
 }
-/* line 65, ../sass/style.scss */
+/* line 64, ../sass/style.scss */
 body.neatline.show div.exhibit #neatline,
 body.neatline.show div.exhibit #neatline-map,
 body.neatline.fullscreen div.exhibit #neatline,
@@ -57,7 +57,7 @@ body.neatline.fullscreen div.exhibit #neatline-map {
   height: 100%;
   width: 100%;
 }
-/* line 72, ../sass/style.scss */
+/* line 71, ../sass/style.scss */
 body.neatline.show div#neatline-narrative,
 body.neatline.fullscreen div#neatline-narrative {
   background: #15415e;
@@ -69,18 +69,18 @@ body.neatline.fullscreen div#neatline-narrative {
   padding: 2%;
   width: 20%;
 }
-/* line 73, ../sass/style.scss */
+/* line 72, ../sass/style.scss */
 body.neatline.show div#neatline-narrative a,
 body.neatline.fullscreen div#neatline-narrative a {
   color: #00c5ff;
   text-decoration: underline;
 }
-/* line 77, ../sass/style.scss */
+/* line 76, ../sass/style.scss */
 body.neatline.show div#neatline-narrative a:hover,
 body.neatline.fullscreen div#neatline-narrative a:hover {
   color: #2a7f9e;
 }
-/* line 88, ../sass/style.scss */
+/* line 87, ../sass/style.scss */
 body.neatline.show div#neatline-narrative a.back,
 body.neatline.fullscreen div#neatline-narrative a.back {
   display: inline-block;
@@ -88,29 +88,29 @@ body.neatline.fullscreen div#neatline-narrative a.back {
   margin-bottom: 1em;
   font-size: 16px;
 }
-/* line 93, ../sass/style.scss */
+/* line 92, ../sass/style.scss */
 body.neatline.show div#neatline-narrative a.back .arrow,
 body.neatline.fullscreen div#neatline-narrative a.back .arrow {
   font-size: 18px;
 }
-/* line 97, ../sass/style.scss */
+/* line 96, ../sass/style.scss */
 body.neatline.show div#neatline-narrative h1.title,
 body.neatline.fullscreen div#neatline-narrative h1.title {
   font-size: 40px;
   line-height: 38px;
   margin-bottom: 1.0em;
 }
-/* line 102, ../sass/style.scss */
+/* line 101, ../sass/style.scss */
 body.neatline.show div#neatline-narrative div#neatline-narrative a:hover,
 body.neatline.fullscreen div#neatline-narrative div#neatline-narrative a:hover {
   font-color: #2a7f9e;
 }
-/* line 105, ../sass/style.scss */
+/* line 104, ../sass/style.scss */
 body.neatline.show div#neatline-narrative p,
 body.neatline.fullscreen div#neatline-narrative p {
   color: rgba(255, 255, 255, 0.9);
 }
-/* line 108, ../sass/style.scss */
+/* line 107, ../sass/style.scss */
 body.neatline.show div#neatline-narrative [data-neatline-slug], body.neatline.show div#neatline-narrative [data-neatline-slug].selected,
 body.neatline.show div#neatline-narrative [data-neatline-slug].hover,
 body.neatline.fullscreen div#neatline-narrative [data-neatline-slug],
@@ -120,7 +120,7 @@ body.neatline.fullscreen div#neatline-narrative [data-neatline-slug].hover {
   cursor: pointer;
   padding: 3px 3px 0px;
 }
-/* line 113, ../sass/style.scss */
+/* line 112, ../sass/style.scss */
 body.neatline.show div#neatline-narrative .selected[data-neatline-slug],
 body.neatline.show div#neatline-narrative .hover[data-neatline-slug],
 body.neatline.fullscreen div#neatline-narrative .selected[data-neatline-slug],
@@ -128,7 +128,7 @@ body.neatline.fullscreen div#neatline-narrative .hover[data-neatline-slug] {
   background: #0a293d;
   color: white;
 }
-/* line 121, ../sass/style.scss */
+/* line 120, ../sass/style.scss */
 body.neatline.show #waypoints,
 body.neatline.fullscreen #waypoints {
   color: #15415e;
@@ -137,7 +137,7 @@ body.neatline.fullscreen #waypoints {
   border-right: 2px solid #030c11;
   max-height: calc(100% - 120px) !important;
 }
-/* line 127, ../sass/style.scss */
+/* line 126, ../sass/style.scss */
 body.neatline.show #waypoints a.title,
 body.neatline.fullscreen #waypoints a.title {
   font-size: 18px;
@@ -147,7 +147,7 @@ body.neatline.fullscreen #waypoints a.title {
   background: cyan;
   border-bottom: 2px solid #2a7f9e;
 }
-/* line 128, ../sass/style.scss */
+/* line 127, ../sass/style.scss */
 body.neatline.show #waypoints a.title strong,
 body.neatline.show #waypoints a.title em,
 body.neatline.show #waypoints a.title h1,
@@ -175,7 +175,7 @@ body.neatline.fullscreen #waypoints a.title li {
   font-size: 18px;
   line-height: 1.4em;
 }
-/* line 151, ../sass/style.scss */
+/* line 150, ../sass/style.scss */
 body.neatline.show #waypoints a.title:hover,
 body.neatline.show #waypoints a.title.selected,
 body.neatline.fullscreen #waypoints a.title:hover,
@@ -183,30 +183,30 @@ body.neatline.fullscreen #waypoints a.title.selected {
   background: #0a293d;
   color: #ffffff;
 }
-/* line 156, ../sass/style.scss */
+/* line 155, ../sass/style.scss */
 body.neatline.show #waypoints a.title.highlighted,
 body.neatline.fullscreen #waypoints a.title.highlighted {
   background: #186495;
   color: #ffffff;
 }
-/* line 162, ../sass/style.scss */
+/* line 161, ../sass/style.scss */
 body.neatline.show #static-bubble div.body a.close,
 body.neatline.fullscreen #static-bubble div.body a.close {
   font-size: 2em;
   line-height: .8em;
 }
-/* line 166, ../sass/style.scss */
+/* line 165, ../sass/style.scss */
 body.neatline.show #static-bubble div.body a.close:hover,
 body.neatline.fullscreen #static-bubble div.body a.close:hover {
   background: none;
 }
-/* line 170, ../sass/style.scss */
+/* line 169, ../sass/style.scss */
 body.neatline.show #colophon,
 body.neatline.fullscreen #colophon {
   border-top: 1px solid #ffffff;
   font-size: 16px;
 }
-/* line 174, ../sass/style.scss */
+/* line 173, ../sass/style.scss */
 body.neatline.show #static-bubble,
 body.neatline.fullscreen #static-bubble {
   display: block;
@@ -214,6 +214,7 @@ body.neatline.fullscreen #static-bubble {
   color: #ffffff;
   border-radius: 14px;
   opacity: initial;
+  max-height: calc(100% - 160px);
 }
 /* line 181, ../sass/style.scss */
 body.neatline.show #static-bubble .close,
@@ -278,42 +279,53 @@ body.neatline.fullscreen #static-bubble .content.body p a:hover {
 }
 
 /* line 230, ../sass/style.scss */
-#neatline .widget::-webkit-scrollbar-track {
+#neatline .widget::-webkit-scrollbar-track,
+#static-bubble::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   background-color: #F5F5F5;
 }
 
-/* line 236, ../sass/style.scss */
-#neatline .widget::-webkit-scrollbar {
-  width: 12px;
+/* line 237, ../sass/style.scss */
+#neatline .widget::-webkit-scrollbar,
+#static-bubble::-webkit-scrollbar {
+  width: 14px;
   background-color: #F5F5F5;
 }
 
-/* line 241, ../sass/style.scss */
-#neatline .widget::-webkit-scrollbar-thumb {
+/* line 243, ../sass/style.scss */
+#neatline .widget::-webkit-scrollbar-thumb,
+#static-bubble::-webkit-scrollbar-thumb {
   border-radius: 10px;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: #2a7f9e;
 }
 
-/* line 247, ../sass/style.scss */
+/* line 249, ../sass/style.scss */
+#static-bubble::-webkit-scrollbar-thumb {
+  background-color: #1c587f;
+}
+
+/* line 253, ../sass/style.scss */
 #neatline.Waypoints.Simile #simile,
 #neatline.Simile #simile {
   height: 120px;
   width: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
-/* line 251, ../sass/style.scss */
+/* line 260, ../sass/style.scss */
 #neatline.Waypoints.Simile #simile .timeline-band-inner,
 #neatline.Simile #simile .timeline-band-inner {
   border: 2px solid #2a7f9e;
 }
-/* line 254, ../sass/style.scss */
+/* line 263, ../sass/style.scss */
 #neatline.Waypoints.Simile #simile .timeline-band-layer,
 #neatline.Simile #simile .timeline-band-layer {
   background: rgba(0, 250, 255, 0.1);
 }
-/* line 258, ../sass/style.scss */
+/* line 267, ../sass/style.scss */
 #neatline.Waypoints.Simile #simile strong,
 #neatline.Waypoints.Simile #simile em,
 #neatline.Waypoints.Simile #simile h1,
