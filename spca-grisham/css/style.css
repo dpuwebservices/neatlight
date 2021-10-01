@@ -198,7 +198,8 @@ body.neatline.show #static-bubble p a:hover, body.neatline.fullscreen #static-bu
 }
 
 /* STYLES FOR NEATLINE
-
+Add within the Neatline 'Styles" settings
+Stylesheet:
 .all{
   stroke-width: 2;
   stroke-color: #000;
@@ -211,6 +212,9 @@ body.neatline.show #static-bubble p a:hover, body.neatline.fullscreen #static-bu
   fill-opacity: 0.20;
   map-focus: (parameters from placement of map)
 }
+
+Default Map focus: 1997,898
+Default Map Zoom: 0
 
 */
 
