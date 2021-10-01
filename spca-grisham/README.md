@@ -21,6 +21,7 @@ The settings below are specific to the Grisham exhibit
   map-focus: (parameters from placement of map)
 }
 
-*Default Map focus*: 1997,898
-*Default Map Zoom*: 0
+**Default Map focus:**: 1997,898
+
+**Default Map Zoom:** 0
 
