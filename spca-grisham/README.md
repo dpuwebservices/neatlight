@@ -7,7 +7,8 @@ The settings below are specific to the Grisham exhibit
 
 ### Add within the Neatline 'Styles" settings
 
-*Stylesheet*
+#### Stylesheet ####
+```
 .all{
   stroke-width: 2;
   stroke-color: #000;
@@ -20,6 +21,7 @@ The settings below are specific to the Grisham exhibit
   fill-opacity: 0.20;
   map-focus: (parameters from placement of map)
 }
+```
 
 **Default Map focus:**: 1997,898
 
