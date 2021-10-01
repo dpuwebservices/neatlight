@@ -1,36 +1,35 @@
 @import url("https://fonts.googleapis.com/css?family=PT+Sans+Caption");
-/* line 19, ../sass/style.scss */
+#OpenLayers_Control_MaximizeDiv {
+  display: none;
+}
+
 * {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
 
-/* line 24, ../sass/style.scss */
 em {
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Sifonn Pro';
+  font-family: "Sifonn Pro";
   font-style: normal;
   font-weight: normal;
   src: local("Sifonn Pro"), url("../fonts/SIFONN_PRO.woff") format("woff");
 }
-/* line 35, ../sass/style.scss */
 body, html {
   margin: 0;
   background: #ffffff;
   font-family: "PT Sans Caption", sans-serif;
 }
 
-/* line 40, ../sass/style.scss */
 a {
   color: #c1ad4c;
   font-size: 14px;
 }
 
-/* line 45, ../sass/style.scss */
 h1, h2, h3, h4 {
   font-family: "Sifonn Pro";
   line-height: 28px;
@@ -38,46 +37,37 @@ h1, h2, h3, h4 {
   color: #687c7c;
 }
 
-/* line 52, ../sass/style.scss */
 p.title {
   font-size: 20px;
   color: #687c7c;
 }
 
-/* line 59, ../sass/style.scss */
 body.neatline.browse div.container {
   margin: 3em auto;
   width: 50%;
 }
-/* line 62, ../sass/style.scss */
 body.neatline.browse div.container div.exhibit {
   margin: 5px 0;
 }
 
-/* line 70, ../sass/style.scss */
 body.neatline.show div.exhibit, body.neatline.fullscreen div.exhibit {
   float: left;
   width: 1px;
 }
-/* line 73, ../sass/style.scss */
 body.neatline.show div.exhibit #neatline, body.neatline.fullscreen div.exhibit #neatline {
   background: #8ba98f;
 }
-/* line 76, ../sass/style.scss */
 body.neatline.show div.exhibit #neatline, body.neatline.show div.exhibit #neatline-map, body.neatline.fullscreen div.exhibit #neatline, body.neatline.fullscreen div.exhibit #neatline-map {
   height: 100%;
   width: 100%;
 }
-/* line 84, ../sass/style.scss */
 body.neatline.show #static-bubble div.body a.close, body.neatline.fullscreen #static-bubble div.body a.close {
   font-size: 2em;
-  line-height: .8em;
+  line-height: 0.8em;
 }
-/* line 88, ../sass/style.scss */
 body.neatline.show #static-bubble div.body a.close:hover, body.neatline.fullscreen #static-bubble div.body a.close:hover {
   background: none;
 }
-/* line 96, ../sass/style.scss */
 body.neatline.show #static-bubble, body.neatline.fullscreen #static-bubble {
   display: block;
   background: #ffffff;
@@ -86,7 +76,6 @@ body.neatline.show #static-bubble, body.neatline.fullscreen #static-bubble {
   opacity: initial;
   border: 10px solid #ffffff;
 }
-/* line 105, ../sass/style.scss */
 body.neatline.show #static-bubble .close, body.neatline.fullscreen #static-bubble .close {
   background: #c1ad4c;
   color: #ffffff;
@@ -98,21 +87,18 @@ body.neatline.show #static-bubble .close, body.neatline.fullscreen #static-bubbl
   /* Safari */
   transition-duration: 0.5s;
 }
-/* line 115, ../sass/style.scss */
 body.neatline.show #static-bubble .close:hover, body.neatline.fullscreen #static-bubble .close:hover {
   background: #a29038;
   color: #ffffff;
 }
-/* line 119, ../sass/style.scss */
 body.neatline.show #static-bubble .title, body.neatline.fullscreen #static-bubble .title {
   font-family: "Sifonn Pro";
   display: inline;
-  font-size: 1.80em;
+  font-size: 1.8em;
   line-height: 1em;
   color: #687c7c;
   font-style: normal !important;
 }
-/* line 127, ../sass/style.scss */
 body.neatline.show #static-bubble .subItemTitle, body.neatline.fullscreen #static-bubble .subItemTitle {
   display: block;
   font-size: 16px;
@@ -122,62 +108,51 @@ body.neatline.show #static-bubble .subItemTitle, body.neatline.fullscreen #stati
   padding: 0 7px;
   margin-top: 1.2em;
 }
-/* line 136, ../sass/style.scss */
 body.neatline.show #static-bubble .subItem, body.neatline.fullscreen #static-bubble .subItem {
   font-size: 14px;
   display: block;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
   padding: 5px 7px 0;
   word-wrap: break-word;
 }
-/* line 143, ../sass/style.scss */
 body.neatline.show #static-bubble p, body.neatline.fullscreen #static-bubble p {
   word-wrap: break-word;
   font-size: 14px;
 }
-/* line 146, ../sass/style.scss */
 body.neatline.show #static-bubble p a, body.neatline.fullscreen #static-bubble p a {
   color: #c1ad4c;
   font-size: 14px;
   text-decoration: none;
 }
-/* line 151, ../sass/style.scss */
 body.neatline.show #static-bubble p a:hover, body.neatline.fullscreen #static-bubble p a:hover {
   text-decoration: underline;
 }
 
-/* line 159, ../sass/style.scss */
 #neatline.Waypoints.Simile #simile, #neatline.Simile #simile {
   height: 120px;
 }
-/* line 161, ../sass/style.scss */
 #neatline.Waypoints.Simile #simile .timeline-band-inner, #neatline.Simile #simile .timeline-band-inner {
   border: 2px solid #516060;
 }
-/* line 164, ../sass/style.scss */
 #neatline.Waypoints.Simile #simile .timeline-band-layer, #neatline.Simile #simile .timeline-band-layer {
   background: rgba(104, 124, 124, 0.1);
 }
-/* line 168, ../sass/style.scss */
 #neatline.Waypoints.Simile #simile strong, #neatline.Waypoints.Simile #simile em, #neatline.Waypoints.Simile #simile h1, #neatline.Waypoints.Simile #simile h2, #neatline.Waypoints.Simile #simile h3, #neatline.Waypoints.Simile #simile h4, #neatline.Waypoints.Simile #simile h5, #neatline.Waypoints.Simile #simile h6, #neatline.Waypoints.Simile #simile span, #neatline.Waypoints.Simile #simile div, #neatline.Waypoints.Simile #simile li, #neatline.Simile #simile strong, #neatline.Simile #simile em, #neatline.Simile #simile h1, #neatline.Simile #simile h2, #neatline.Simile #simile h3, #neatline.Simile #simile h4, #neatline.Simile #simile h5, #neatline.Simile #simile h6, #neatline.Simile #simile span, #neatline.Simile #simile div, #neatline.Simile #simile li {
   font-weight: normal;
   font-style: normal;
   font-size: 12px;
 }
 
-/* line 175, ../sass/style.scss */
 .grisham-narrative {
   margin: 10px 50px;
   scroll: auto;
 }
-/* line 179, ../sass/style.scss */
 .grisham-narrative h1, .grisham-narrative h2, .grisham-narrative h3, .grisham-narrative h4 {
   font-size: 20px;
   line-height: 28px;
   text-transform: uppercase;
   margin: 0 0 3px;
 }
-/* line 185, ../sass/style.scss */
 .grisham-narrative .button {
   background: #c1ad4c;
   color: #ffffff;
@@ -189,41 +164,35 @@ body.neatline.show #static-bubble p a:hover, body.neatline.fullscreen #static-bu
   /* Safari */
   transition-duration: 0.5s;
 }
-/* line 195, ../sass/style.scss */
 .grisham-narrative .button:hover {
   background: #a29038;
   color: #ffffff;
   text-decoration: none;
 }
-/* line 200, ../sass/style.scss */
 .grisham-narrative p {
   color: #8ba98f;
   font-size: 14px;
   margin: 0 0 10px;
   display: inline-block;
 }
-/* line 206, ../sass/style.scss */
 .grisham-narrative a {
   font-weight: bold;
   font-size: 13px;
   text-decoration: none;
   border-bottom: 3px solid #c1ad4c;
 }
-/* line 212, ../sass/style.scss */
 .grisham-narrative a:hover {
   color: #a29038;
   text-decoration: none;
   border-bottom: none;
 }
 
-/* line 219, ../sass/style.scss */
 #OpenLayers_Control_PanZoom_2_zoomworld {
   background: #222a23;
   pointer-events: none;
   cursor: default;
 }
 
-/* line 224, ../sass/style.scss */
 #OpenLayers_Control_PanZoom_2_zoomworld_innerImage {
   display: none;
 }
@@ -244,3 +213,5 @@ body.neatline.show #static-bubble p a:hover, body.neatline.fullscreen #static-bu
 }
 
 */
+
+/*# sourceMappingURL=style.css.map */

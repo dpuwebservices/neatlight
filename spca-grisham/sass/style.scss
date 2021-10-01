@@ -16,6 +16,11 @@ $bubbleGreen: rgba(139, 169, 143, 0.9);
 $wordBreak: break-word;
 
 
+// Hide base layer picker from display (specific only to this project)
+#OpenLayers_Control_MaximizeDiv {
+  display:none;
+}
+
 * {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
